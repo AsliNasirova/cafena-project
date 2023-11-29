@@ -28,10 +28,10 @@ function TopGrade() {
                 </div>
                 <div className="americano">
                     <div className="americano_grade">
-                        <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-1.jpeg" alt="" />
-                       <div className="count"><h6>01</h6></div> 
+                        <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-2.jpeg" alt="" />
+                       <div className="count"><h6>02</h6></div> 
                        <div className="text_americano">
-                        <h2>Americano Grade</h2>
+                        <h2>Arebica Green</h2>
                         <p>Curabitur semper erat a lacusey <br />
                         consequat, sit amet quam</p>
                        </div>
@@ -39,10 +39,10 @@ function TopGrade() {
                 </div>
                 <div className="americano">
                     <div className="americano_grade">
-                        <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-1.jpeg" alt="" />
-                       <div className="count"><h6>01</h6></div> 
+                        <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-3.jpeg" alt="" />
+                       <div className="count"><h6>03</h6></div> 
                        <div className="text_americano">
-                        <h2>Americano Grade</h2>
+                        <h2>Mixed Rosted</h2>
                         <p>Curabitur semper erat a lacusey <br />
                         consequat, sit amet quam</p>
                        </div>
@@ -50,11 +50,11 @@ function TopGrade() {
                 </div>
                 <div className="americano">
                     <div className="americano_grade">
-                        <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-1.jpeg" alt="" />
-                       <div className="count"><h6>01</h6></div> 
+                        <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-4.jpeg" alt="" />
+                       <div className="count"><h6>04</h6></div> 
                        <div className="text_americano">
-                        <h2>Americano Grade</h2>
-                        <p>Curabitur semper erat a lacusey <br />
+                        <h2>Robasta Rosted</h2>
+                        <p>Curabitur semper erat a lacusey <br /> 
                         consequat, sit amet quam</p>
                        </div>
                     </div>

@@ -1,8 +1,10 @@
 .container_aboutUs {
     width: 98%;
     display: flex;
+    justify-content: center;
     background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/shape/about-shape-2-1.png);
     gap: 30px;
+    
 
     // left part
     .left_image_part {
