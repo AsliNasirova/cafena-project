@@ -8,6 +8,7 @@
     // up part
 
     .worldTopTitle {
+        margin-top: 80px;
         .text_topGrade {
             .topgrade {
                 color: #ffffff;
@@ -34,9 +35,47 @@
 
     // down part
     .downPartWorldTop {
+       margin-top: 85px;
         display: flex;
         justify-content: center;
-        gap: 60px;
+        gap: 100px;
+
+        .arebica {
+            position: relative;
+            z-index: 2;
+            margin-top: 55px;
+            
+
+            .americano_grade {
+                // display: flex;
+
+                img {
+                    border-radius: 50%;
+                    max-width: 100%;
+                    height: 160px;
+                    width: 166px;
+                }
+
+                .count {
+                    position: absolute;
+                    top: 0;
+                    left: 40px;
+                    background: #ffffff;
+                    color: #000;
+                    border: 1px solid #E2DFDD;
+                    font-weight: 500;
+                    margin-top: 0;
+                    font-size: 30px;
+                    border-radius: 50px;
+                    padding: 10px;
+                }
+                .text_americano{
+                    p{
+                        color: #6C6C6C;
+                    }
+                }
+            }
+        }
 
         .americano {
             position: relative;

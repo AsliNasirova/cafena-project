@@ -26,7 +26,7 @@ function TopGrade() {
                        </div>
                     </div>
                 </div>
-                <div className="americano">
+                <div className="arebica">
                     <div className="americano_grade">
                         <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-2.jpeg" alt="" />
                        <div className="count"><h6>02</h6></div> 
@@ -48,7 +48,7 @@ function TopGrade() {
                        </div>
                     </div>
                 </div>
-                <div className="americano">
+                <div className="arebica">
                     <div className="americano_grade">
                         <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-4.jpeg" alt="" />
                        <div className="count"><h6>04</h6></div> 
