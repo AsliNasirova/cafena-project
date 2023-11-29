@@ -1,0 +1,67 @@
+.container_aboutUs {
+    width: 98%;
+    display: flex;
+    background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/shape/about-shape-2-1.png);
+    gap: 30px;
+
+    // left part
+    .left_image_part {
+        .image_aboutUs {
+            position: relative;
+
+            .bigImage {
+                width: 80%;
+                height: 80%;
+            }
+
+            .smallImage {
+                position: absolute;
+                left: -22px;
+                bottom: 0px;
+                width: 40%;
+                height: 50%;
+            }
+        }
+    }
+
+    // right part
+    .right_text_part {
+        font-family: Jost, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text_aboutUs {
+            justify-content: center;
+            text-align: start;
+            align-items: center;
+            .aboutus{
+                width: 85px;
+                align-items: center;
+            }
+            h2{
+                font-size: 30px;
+               
+            }
+            h6 {
+               
+                color: #FFFFFF;
+                background-color: #C7A17A;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                border-radius: 3px;
+                line-height: 22px;
+                margin-bottom: 23px;
+                font-size: 12px;
+               
+            }
+
+            p {
+                color: #A7A7A7;
+                font-size: 18px;
+                margin: 0px 0px 35px;
+                
+            }
+        }
+    }
+}

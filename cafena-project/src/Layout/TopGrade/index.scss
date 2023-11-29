@@ -1,0 +1,42 @@
+.container_topGrade {
+    // display: flex;
+    justify-content: center;
+    width: 98%;
+
+    // up part
+
+    // .worldTopTitle{
+
+    // }
+
+    // down part
+    .downPartWorldTop {
+        display: flex;
+
+        .americano {
+            position: relative;
+            z-index: 2;
+
+            .americano_grade {
+                // display: flex;
+               
+                img {
+                    border-radius: 50%;
+                    max-width: 100%;
+                    height: 160px;
+                }
+
+                .count {
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                    background: #ffffff;
+                    color: #000;
+                    border: 1px solid #E2DFDD;
+                    font-weight: 500;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
