@@ -11,18 +11,23 @@
         justify-content: space-between;
 
         .navigations {
+            height: 100%;
             width: 60%;
             display: flex;
             justify-content: center;
             align-items: center;
 
             .navList {
+                height: 100%;
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
 
                 li {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
                     font-size: 15px;
                     font-weight: 700;
                 }
@@ -37,14 +42,15 @@
 
                     .subNav {
                         display: none;
+                        row-gap: 10px;
                         width: max-content;
                         position: absolute;
                         top: 100%;
                         left: 0;
                         padding: 30px;
                         background-color: white;
+                        border-radius: 3px;
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 15px;
-                        border: 1px solid black;
                     }
                 }
             }
@@ -63,30 +69,35 @@
             }
 
             .searchForm {
-                margin-top: 20PX;
+                margin-top: 20px;
                 position: absolute;
                 top: 100%;
                 right: 80%;
-                padding: 0.7em;
-                background-color: gray;
-                
-                .searchBox{
+                padding: 1em;
+                background-color: white;
+
+                .searchBox {
                     width: 320px;
                     height: 55px;
-                    padding: 20px;
+                    padding: 20px 0;
                     display: flex;
-                    background-color: #fff;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #eee;
 
-                    #searchFromInput{
+                    #searchFromInput {
+                        width: 100%;
+                        font-size: 15px;
+                        padding: 0 10px;
                         background-color: transparent;
                         border: 0px;
 
-                        &:focus{
-                            border: 0px;
+                        &:focus {
+                            outline: 0;
                         }
                     }
 
-                    .searchFromIcon{
+                    .searchFromIcon {
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -94,8 +105,9 @@
                         width: 55px;
                         height: 55px;
                         color: white;
+
                     }
-                    
+
                 }
             }
 
@@ -117,6 +129,66 @@
                     border-radius: 10px;
                     background-color: #cd8d16;
                 }
+            }
+        }
+
+        .sideInfo {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100vh;
+            transition: 0.4s;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            .sideInfoTitleBox {
+                width: 100%;
+
+                .sideInfoNav {
+                    display: flex;
+                    align-items: center;
+
+                    .sideInfoBtns {
+                        font-weight: 700;
+                        cursor: pointer;
+                        padding: 20px 30px;
+                        color: white;
+                        background-color: black;
+                        font-size: 14px;
+                        width: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: 0.4s;
+                    }
+                }
+
+                .sideInfoHead {
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .sideInfoQuit {
+                        cursor: pointer;
+                        font-size: 17px;
+                        color: white;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: black;
+                        border-radius: 20px;
+                    }
+                }
+            }
+
+            .sideInfoTextBox{
+                padding: 0 20px;
             }
         }
     }

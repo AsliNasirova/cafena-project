@@ -2,10 +2,16 @@ import { NavLink } from 'react-router-dom'
 import styled, { } from "styled-components";
 import React, { useState } from 'react'
 import './index.scss'
+import SideInfo from './SideInfo';
+import SideMenu from './SideMenu';
 
 function Navbar() {
 
+    const [isInfoOpen, setIsInfoOpen] = useState(true)
     const [isOpen, setIsOpen] = useState(false)
+
+    // Dropdown's states
+    const [homeOpen, setHomeOpen] = useState(false)
 
     const StyledNavLink = styled(NavLink)`
         position: relative;
@@ -37,6 +43,18 @@ function Navbar() {
             color: #cd8d16;
         }
     `
+
+    const HideSideInfo = styled.div`
+            display: 'none';
+        `
+
+    const HideSideMenu = styled.div`
+            display: 'none';
+        `
+
+    function handleInfo(bool) {
+        setIsInfoOpen(bool)
+    }
 
     function handleModal() {
         setIsOpen(!isOpen)
@@ -86,11 +104,27 @@ function Navbar() {
                     <i className="fa-solid fa-bars"></i>
                     <i className="fa-solid fa-basket-shopping basket_icon"><div className="basketProductCount">3</div></i>
 
-                    <div className="searchForm">
+                    <div className="searchForm" style={!isOpen ? { display: 'none' } : { display: 'block' }}>
                         <div className="searchBox">
-                            <input id='searchFromInput' placeholder='Search Keywords' type="search" />
+                            <input id='searchFromInput' placeholder='Search Keywords' type="text" />
                             <i className="fa-solid fa-magnifying-glass searchFromIcon"></i>
                         </div>
+                    </div>
+                </div>
+                <div className="sideInfo">
+                    <div className="sideInfoTitleBox">
+                        <div className="sideInfoNav">
+                            <div className="sideInfoMenuBtn sideInfoBtns" onClick={() => handleInfo(false)} style={isInfoOpen ? { backgroundColor: 'white', color: 'black' } : { backgroundColor: 'black', color: 'white' }}><span>MENU</span></div>
+                            <div className="sideInfoInfoBtn sideInfoBtns" onClick={() => handleInfo(true)} style={!isInfoOpen ? { backgroundColor: 'white', color: 'black' } : { backgroundColor: 'black', color: 'white' }}><span>INFO</span></div>
+                        </div>
+                        <div className="sideInfoHead">
+                            <img src="https://xpressrow.com/html/cafena/cafena/assets/images/logo/logo-black.png" alt="" />
+                            <i className="fa-solid fa-xmark sideInfoQuit"></i>
+                        </div>
+                    </div>
+                    <div className="sideInfoTextBox" >
+                        { isInfoOpen ? <SideInfo /> : <HideSideInfo/> }
+                        { isInfoOpen ? <HideSideMenu/> : <SideMenu/> }
                     </div>
                 </div>
             </div>

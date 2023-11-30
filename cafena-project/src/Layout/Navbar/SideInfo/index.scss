@@ -1,0 +1,86 @@
+.AboutUsPart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .aboutusTitle{
+        margin-bottom: 20px;
+    }
+
+    .aboutusText{
+        font-size: 15px;
+        line-height: 1.8em;
+        font-weight: 600;
+        color: #adadad;
+        margin-bottom: 20px;
+
+    }
+
+    .contactusBtn{
+        cursor: pointer;
+        margin-bottom: 40px;
+        height: 50px;
+        padding: 9.5px 34px;
+    }
+}
+
+.ContactUsPart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+
+    .contactusIcons{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        
+        .contactusIcon{
+            color: #c7a17a;
+            
+            .contactusIconText{
+                margin-left: 1em;
+                font-weight: 500;
+                color: #adadad;
+                line-height: 1.5em;
+            }
+        }
+    }
+
+    .socialLinks{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        .socialLinkIconBox{
+            display: flex;
+            align-items: center;
+
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #666;
+            border-radius: 6px;
+            transition: 0.5s;
+
+            &:hover{
+                border: 1px solid #cd8d16;
+
+                .socialLinkIcon{
+                    color: #cd8d16;
+                }
+            }
+            
+            .socialLinkIcon{
+                color: #adadad;
+                font-size: 14px;
+                transition: 0.5s;
+            }
+        }
+    }
+}
