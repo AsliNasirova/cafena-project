@@ -1,68 +1,122 @@
-.container_aboutUs {
-    width: 98%;
+#root {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#aboutUs {
+    background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/shape/about-shape-2-1.png);
     display: flex;
     justify-content: center;
-    background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/shape/about-shape-2-1.png);
-    gap: 30px;
-    
 
-    // left part
-    .left_image_part {
-        .image_aboutUs {
-            position: relative;
+    .container_aboutUs {
 
-            .bigImage {
-                width: 80%;
-                height: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+
+        // left part
+        .left_image_part {
+            .image_aboutUs {
+                position: relative;
+
+                // .bigImage {
+
+                //     position: absolute;
+                //     top: 0px;
+                //     left: 0px;
+                // }
+
+                .smallImage {
+                    position: absolute;
+                    left: -22px;
+                    bottom: 0px;
+                    // top: 0px;
+                    // left: 0px;
+
+                }
             }
+        }
 
-            .smallImage {
-                position: absolute;
-                left: -22px;
-                bottom: 0px;
-                width: 40%;
-                height: 50%;
+        // right part
+        .right_text_part {
+            font-family: Jost, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .text_aboutUs {
+                justify-content: center;
+                text-align: start;
+                align-items: center;
+                max-width: 555px;
+                height: 290px;
+
+                .aboutus {
+                    width: 85px;
+                    align-items: center;
+                }
+
+                h2 {
+                    font-size: 30px;
+
+                }
+
+                h6 {
+
+                    color: #FFFFFF;
+                    background-color: #C7A17A;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    border-radius: 3px;
+                    line-height: 22px;
+                    margin-bottom: 23px;
+                    font-size: 12px;
+
+                }
+
+                p {
+                    color: #A7A7A7;
+                    font-size: 18px;
+                    margin: 0px 0px 35px;
+
+                }
             }
         }
     }
+}
 
-    // right part
-    .right_text_part {
-        font-family: Jost, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@media screen and (max-width:1200px) {
+    #aboutUs {
+        .container_aboutUs {
+            flex-direction: column;
 
-        .text_aboutUs {
-            justify-content: center;
-            text-align: start;
-            align-items: center;
-            .aboutus{
-                width: 85px;
-                align-items: center;
-            }
-            h2{
-                font-size: 30px;
-               
-            }
-            h6 {
-               
-                color: #FFFFFF;
-                background-color: #C7A17A;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                border-radius: 3px;
-                line-height: 22px;
-                margin-bottom: 23px;
-                font-size: 12px;
-               
-            }
+        }
 
-            p {
-                color: #A7A7A7;
-                font-size: 18px;
-                margin: 0px 0px 35px;
-                
+        .image_aboutUs {
+            margin-right: 0px;
+        }
+
+        .smallImage {
+            right: 20px !important;
+        }
+
+        .right_text_part {
+            width: 90%;
+            height: 90%;
+        }
+
+        .container_aboutUs {
+            .right_text_part {
+                margin: auto;
+
+                .text_aboutUs {
+
+                    // width: 100vw;
+                    max-width: 1090px;
+                    height: 267px;
+                }
             }
         }
     }

@@ -4,7 +4,7 @@ import './index.scss'
 function AboutUs() {
   return (
     <>
-      <section className='aboutUs'>
+      <section id='aboutUs'>
         <div className="container_aboutUs">
             <div className="left_image_part">
                 <div className="image_aboutUs">
@@ -17,10 +17,10 @@ function AboutUs() {
             <div className="right_text_part">
                 <div className="text_aboutUs">
                     <div className="aboutus"> <h6>ABOUT US</h6></div>
-                   <h2>ONE OF THE BEST COFFEE HOUSE <br />
-                    IN YOUR HOME TOWN</h2> <br />
-                    <p>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl <br /> suscipit ligula volutpat, a feugiat urna maximus. Cras massa <br /> nibhtincidunt.</p> <br /> 
-                    <p>Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut <br /> quam quis quam venenatis fringilla. Morbi vestibulum id tellus <br /> mmodo mattis. Aliquam erat volutpat. Aenean accumsan id mi nec <br /> semper. Lorem ipsum.</p>
+                   <h2>ONE OF THE BEST COFFEE HOUSE 
+                    IN YOUR HOME TOWN</h2> 
+                    <p>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl  suscipit ligula volutpat, a feugiat urna maximus. Cras massa  nibhtincidunt.</p>
+                    <p>Donec et nibh maximus, congue est eu, mattis nunc. Praesent ut  quam quis quam venenatis fringilla. Morbi vestibulum id tellus  mmodo mattis. Aliquam erat volutpat. Aenean accumsan id mi nec semper. Lorem ipsum.</p>
 
                 </div>
             </div>
