@@ -9,7 +9,7 @@ function AboutUs() {
             <div className="left_image_part">
                 <div className="image_aboutUs">
                     <img className='bigImage' src="https://xpressrow.com/html/cafena/cafena/assets/images/about/about-img-2-1.png" alt="" />
-                    div<img className='smallImage' src="https://xpressrow.com/html/cafena/cafena/assets/images/about/about-img-2-2.png" alt="" />
+                    <img className='smallImage' src="https://xpressrow.com/html/cafena/cafena/assets/images/about/about-img-2-2.png" alt="" />
                 </div>
             </div>
 

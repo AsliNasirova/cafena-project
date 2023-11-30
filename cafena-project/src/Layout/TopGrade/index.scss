@@ -39,9 +39,10 @@
         display: flex;
         justify-content: center;
         gap: 100px;
+        flex-wrap: wrap;
 
         .arebica {
-            position: relative;
+           
             z-index: 2;
             margin-top: 55px;
             
@@ -79,7 +80,7 @@
         }
 
         .americano {
-            position: relative;
+            // position: relative;
             z-index: 2;
 
             .americano_grade {
@@ -116,10 +117,27 @@
 }
 
 @media screen and (max-width:1200px) {
+    
+    
     .container_topGrade{
         flex-direction: column;
     }
     .downPartWorldTop{
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-areas: "grid1 grid2"
+        "grid3 grid4"
+        ;
+        .coffe_brand1  {
+            grid-area:"grid1";
+        }
+        .coffe_brand2{ grid-area: "grid2";}
+        .coffe_brand3{ grid-area:"grid3";} 
+        .coffe_brand4{grid-area:"grid4" ;}
+
+
+
+        .coffe_brand{
+            margin-top: 0px;
+        }
     }
 }

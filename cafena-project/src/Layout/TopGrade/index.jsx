@@ -15,7 +15,7 @@ function TopGrade() {
                 </div>
             </div>
             <div className="downPartWorldTop">
-                <div className="americano">
+                <div className="americano coffe_brand coffe_brand1">
                     <div className="americano_grade">
                         <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-1.jpeg" alt="" />
                        <div className="count"><h6>01</h6></div> 
@@ -26,7 +26,7 @@ function TopGrade() {
                        </div>
                     </div>
                 </div>
-                <div className="arebica">
+                <div className="arebica coffe_brand coffe_brand2">
                     <div className="americano_grade">
                         <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-2.jpeg" alt="" />
                        <div className="count"><h6>02</h6></div> 
@@ -37,7 +37,7 @@ function TopGrade() {
                        </div>
                     </div>
                 </div>
-                <div className="americano">
+                <div className="americano coffe_brand coffe_brand3">
                     <div className="americano_grade">
                         <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-3.jpeg" alt="" />
                        <div className="count"><h6>03</h6></div> 
@@ -48,7 +48,7 @@ function TopGrade() {
                        </div>
                     </div>
                 </div>
-                <div className="arebica">
+                <div className="arebica coffe_brand coffe_brand4">
                     <div className="americano_grade">
                         <img src="https://xpressrow.com/html/cafena/cafena/assets/images/top-grade/tg-2-4.jpeg" alt="" />
                        <div className="count"><h6>04</h6></div> 
