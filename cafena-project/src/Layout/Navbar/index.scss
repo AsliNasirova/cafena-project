@@ -1,41 +1,41 @@
-#Navbar{
+#Navbar {
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
 
-    .NavbarContainer{
+    .NavbarContainer {
         width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .navigations{
+        .navigations {
             width: 60%;
             display: flex;
             justify-content: center;
             align-items: center;
 
-            .navList{
+            .navList {
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
 
-                li{
+                li {
                     font-size: 15px;
                     font-weight: 700;
                 }
 
-                .headNav{
+                .headNav {
                     position: relative;
 
-                    &:hover .subNav{
+                    &:hover .subNav {
                         display: flex;
                         flex-direction: column;
                     }
 
-                    .subNav{
+                    .subNav {
                         display: none;
                         width: max-content;
                         position: absolute;
@@ -43,28 +43,66 @@
                         left: 0;
                         padding: 30px;
                         background-color: white;
-                        box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 15px;   
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 15px;
                         border: 1px solid black;
                     }
                 }
             }
         }
 
-        .iconsDiv{
+        .iconsDiv {
+            position: relative;
             width: 7%;
             display: flex;
             justify-content: space-between;
-            
-            i{
+
+            i {
                 cursor: pointer;
                 font-size: 20px;
                 transition: 0.3s;
             }
 
-            .basket_icon{
+            .searchForm {
+                margin-top: 20PX;
+                position: absolute;
+                top: 100%;
+                right: 80%;
+                padding: 0.7em;
+                background-color: gray;
+                
+                .searchBox{
+                    width: 320px;
+                    height: 55px;
+                    padding: 20px;
+                    display: flex;
+                    background-color: #fff;
+
+                    #searchFromInput{
+                        background-color: transparent;
+                        border: 0px;
+
+                        &:focus{
+                            border: 0px;
+                        }
+                    }
+
+                    .searchFromIcon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: black;
+                        width: 55px;
+                        height: 55px;
+                        color: white;
+                    }
+                    
+                }
+            }
+
+            .basket_icon {
                 position: relative;
 
-                .basketProductCount{
+                .basketProductCount {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -78,11 +116,8 @@
                     padding: 9px;
                     border-radius: 10px;
                     background-color: #cd8d16;
-
                 }
             }
         }
     }
 }
-
-

@@ -11,11 +11,11 @@ function Navbar() {
         position: relative;
         display: flex;
         align-items: center;
-        background-color: white;
         transition: 0.3s;
 
         &::before{
             content: '';
+            opacity: 0;
             display: block;
             position: absolute;
             left: 0px;
@@ -30,6 +30,7 @@ function Navbar() {
         &:hover::before{
             left: -15px;
             z-index: 1;
+            opacity: 1;
         }
         
         &:hover{
@@ -37,9 +38,9 @@ function Navbar() {
         }
     `
 
-        function handleModal() {
-            setIsOpen(!isOpen)
-        }
+    function handleModal() {
+        setIsOpen(!isOpen)
+    }
 
     return (
         <nav id='Navbar'>
@@ -81,9 +82,16 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="iconsDiv">
-                    <i className={`fa-solid fa-${ isOpen ? 'xmark' : 'magnifying-glass'}`} onClick={handleModal}></i>
+                    <i className={`fa-solid fa-${isOpen ? 'xmark' : 'magnifying-glass'}`} onClick={handleModal}></i>
                     <i className="fa-solid fa-bars"></i>
                     <i className="fa-solid fa-basket-shopping basket_icon"><div className="basketProductCount">3</div></i>
+
+                    <div className="searchForm">
+                        <div className="searchBox">
+                            <input id='searchFromInput' placeholder='Search Keywords' type="search" />
+                            <i className="fa-solid fa-magnifying-glass searchFromIcon"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
