@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./index.scss"
+import Button from '../../components/Button'
 
 function Distinct() {
     const [video, setVideo] = useState(false)
@@ -29,9 +30,9 @@ function Distinct() {
                         <button className='testycofee'>
                             <a href="">TASTY COFEE</a>
                         </button>
-                        <button className='readmore'>
-                            <a href="">READ MORE</a>
-                        </button>
+                        <Button>
+                            <a href="">read more</a>
+                        </Button>
                     </div>
                 </div>
                 <div className="right_side">

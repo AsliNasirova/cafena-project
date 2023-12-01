@@ -1,14 +1,14 @@
 import './App.css'
-import Distinct from './Layout/Distinct'
-import Review from './Layout/Review'
+import Home from './Pages/Home'
+import ShopDetails from './Pages/ShopDetails'
 
 function App() {
  
 
   return (
     <>
-      <Distinct/>
-      <Review/>
+    <Home/>
+    <ShopDetails/>
     </>
   )
 }
