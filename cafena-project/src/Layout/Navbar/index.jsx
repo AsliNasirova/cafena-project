@@ -111,7 +111,7 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="sideInfo">
+                <div className="sideInfo" style={{display:'none'}}>
                     <div className="sideInfoTitleBox">
                         <div className="sideInfoNav">
                             <div className="sideInfoMenuBtn sideInfoBtns" onClick={() => handleInfo(false)} style={isInfoOpen ? { backgroundColor: 'white', color: 'black' } : { backgroundColor: 'black', color: 'white' }}><span>MENU</span></div>
