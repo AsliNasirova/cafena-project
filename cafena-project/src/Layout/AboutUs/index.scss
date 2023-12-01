@@ -125,3 +125,21 @@
         }
     }
 }
+@media screen  and (max-width:768px) {
+    #aboutUs{
+        padding-bottom: 70px;
+        .container_aboutUs{
+            .left_image_part{
+                .image_aboutUs{
+                    flex-direction: column;
+                    height: 700px;
+                   align-items: center;
+                   .smallImage{
+                    position: relative;
+                    left: 0;
+                   }
+                }
+            }
+        }
+    }
+}

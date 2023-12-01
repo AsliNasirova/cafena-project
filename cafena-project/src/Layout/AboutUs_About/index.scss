@@ -1,10 +1,80 @@
-#root {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+#breadcrump_area {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(https://xpressrow.com/html/cafena/cafena/assets/images/bg/breadcrumb-bg-1.jpeg);
+    height: 40vh;
+    position: relative;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .container_breadcrump {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // .common {
+        //     position: absolute;
+        // }
+
+        .shape {
+            position: absolute;
+            width: 100%;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .shape_1 {
+            top: 0;
+            display: flex;
+            justify-content: start;
+        }
+
+        .shape_2 {
+            bottom: 0;
+            display: flex;
+            justify-content: end;
+        }
+
+
+
+        .text_center_breadcrump {
+
+            text-align: center;
+
+            .center_text_about_cafena {
+                text-align: center !important;
+
+                h2 {
+                    color: #ffffff;
+                    font-size: 50px;
+
+                }
+            }
+
+            .breadcrump_text_down {
+                display: flex;
+                justify-content: center;
+
+
+                h6 {
+                    font-size: 20px;
+                    color: white;
+                }
+
+                .aboutus_breadcrump {
+                    color: burlywood;
+                }
+            }
+        }
+    }
 }
 
-#aboutUs {
+//////////////////////////////////////////
+#about_cafena_area {
     background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/shape/about-shape-2-1.png);
     display: flex;
     justify-content: center;
@@ -19,7 +89,8 @@
         // left part
         .left_image_part {
             display: flex;
-    justify-content: center;
+            justify-content: center;
+
             .image_aboutUs {
                 position: relative;
                 max-width: 528px;
@@ -48,12 +119,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
 
             .text_aboutUs {
                 justify-content: center;
                 text-align: start;
                 align-items: center;
-                max-width: 555px;
+                max-width: 550px;
                 height: 290px;
 
                 .aboutus {
@@ -86,40 +158,51 @@
 
                 }
             }
-        }
-    }
-}
 
-@media screen and (max-width:1200px) {
-    #aboutUs {
-        .container_aboutUs {
-            flex-direction: column;
+            .about_list {
+                display: flex;
+                flex-direction: column;
+                width: 540px;
 
-        }
+                ul {
+                    gap: 14px;
 
-        .image_aboutUs {
-            margin-right: 0px;
-        }
+                }
 
-        .smallImage {
-            right: -22px !important;
-            
-        }
+                li {
+                    width: 100%;
+                    color: black;
+                    transition: 0.6s;
 
-        .right_text_part {
-            width: 90%;
-            height: 90%;
-        }
+                    span {
+                        display: flex;
+                        margin-bottom: 0;
+                        gap: 14px;
+                    }
 
-        .container_aboutUs {
-            .right_text_part {
-                margin: auto;
+                    .icon {
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
 
-                .text_aboutUs {
 
-                    // width: 100vw;
-                    max-width: 1090px;
-                    height: 267px;
+                    }
+
+                    .fa-check {
+                        padding: 10px;
+                        border-radius: 7px;
+                        border: 1px solid #E2DFDD;
+
+                        &:hover {
+                            color: white;
+                            background-color: black;
+                            transition: 0.6s;
+                        }
+                    }
+
+                    h4 {
+                        display: flex;
+                    }
                 }
             }
         }

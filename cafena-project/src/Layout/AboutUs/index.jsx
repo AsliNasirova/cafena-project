@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.scss'
+import AboutUs_About from '../AboutUs_About'
 
 function AboutUs() {
   return (
@@ -26,6 +27,8 @@ function AboutUs() {
             </div>
         </div>
       </section>
+
+      <AboutUs_About/>
     </>
   )
 }
