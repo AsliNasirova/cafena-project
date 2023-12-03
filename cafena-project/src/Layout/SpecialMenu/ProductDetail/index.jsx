@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
-import { useBasket } from '../../../Context/basket'
-import { useProducts } from '../../../Context/product'
+import { useBasket } from './../../../Context/Basket'
+import { useProducts } from './../../../Context/Product'
 
 function ProductDetail({id,setId}) {
 

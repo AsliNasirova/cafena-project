@@ -1,0 +1,516 @@
+#shop {
+    .topSide {
+        background-image: url("https://xpressrow.com/html/cafena/cafena/assets/images/bg/breadcrumb-bg-1.jpeg");
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 140px 0;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.5;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .shape_1 {
+            position: absolute;
+            top: -4px;
+            left: 0;
+        }
+
+        .shape_2 {
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 56px;
+            margin-bottom: 16px;
+            z-index: 33;
+        }
+
+        a {
+            font-weight: 600;
+        }
+
+        .firstLink {
+            color: #ffffff;
+            margin-right: 10px;
+
+        }
+
+        .secondLink {
+            color: #C7A17A;
+        }
+    }
+
+    .bottomSide {
+        padding: 32px 40px 80px;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 48px;
+            border-radius: 10px;
+            border: 1px solid #E2DFDD;
+            padding: 0px 20px;
+            margin-bottom: 32px;
+
+            span {
+                color: #9f9f9f;
+            }
+
+            .sort {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 48px;
+                height: 100%;
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 16px;
+                    color: #6b6b6b;
+                    font-size: 20px;
+                    height: 100%;
+
+                    i {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                    }
+                }
+
+                .activeButton {
+                    transform: scale(1.4);
+                }
+
+                select {
+                    border: none;
+                }
+            }
+        }
+
+        .mainSide {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            min-height: 100vh;
+
+            .leftSide {
+                width: 66.66%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                position: relative;
+                row-gap: 20px;
+
+                .card {
+                    text-align: center;
+                    width: 30%;
+                    border: 1px solid #E2DFDD;
+                    border-radius: 10px;
+                    box-shadow: 0px 14px 40px 0px rgba(220, 220, 220, 0.3);
+                    position: relative;
+                    transition: 0.5s;
+                    max-height: 33em;
+
+                    .imageTwo {
+                        max-height: 100%;
+                        max-height: 100%;
+                        opacity: 0;
+                        position: absolute;
+                        transition: 0.3s;
+                    }
+
+                    .items {
+                        opacity: 0;
+                    }
+
+                    &:hover {
+
+                        .imageTwo {
+                            opacity: 1;
+                            position: relative;
+                        }
+
+                        .imageOne {
+                            position: absolute;
+                            opacity: 0;
+                            transition: 0.5s;
+                        }
+
+                        .items {
+                            opacity: 1;
+                        }
+                    }
+
+                    .imgbox {
+                        margin: 100px 0 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: 0.5s;
+
+                        .items {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 12px;
+                            width: 100%;
+                            position: absolute;
+                            top: 20px;
+                            left: 0;
+                            transition: 0.4s;
+
+                            i {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 5px;
+                                width: 44px;
+                                height: 44px;
+                                font-size: 20px;
+                                color: #636363;
+                                border: 1px solid #E2DFDD;
+                                padding: 10px 12px;
+                            }
+
+                        }
+
+                        .activeItems {
+                            align-items: end;
+                            bottom: 20px;
+                        }
+                    }
+
+                    .activeImg {
+                        margin: 0;
+                    }
+
+                    .subtitle {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 20px 0;
+                        font-size: 14px;
+
+                        a {
+                            color: #a7a7a7;
+                        }
+
+                        h4 {
+                            margin: 16px 0;
+                        }
+
+                        .price {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 8px;
+
+                            h6 {
+                                font-size: inherit;
+                                font-weight: 500;
+                            }
+
+                            span {
+                                color: #C7A17A;
+                            }
+
+                            del {
+                                color: #5c5c5c;
+                            }
+                        }
+
+                        .activePrice {
+                            justify-content: start;
+                        }
+                    }
+
+                    .activeSubTitle {
+                        text-align: start;
+                        justify-content: start;
+                        padding: 32px 0;
+                        margin-left: 64px;
+                    }
+                }
+
+                .activeCard {
+                    display: flex;
+                    width: 100%;
+                    padding: 0 64px;
+                    height: 250px;
+                    position: relative;
+                }
+            }
+
+            .rightSide {
+                width: 33.33%;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .search {
+                    border: 1px solid #E2DFDD;
+                    padding: 30px;
+                    border-radius: 10px;
+
+                    h2 {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+
+                    .input {
+                        position: relative;
+
+                        input {
+                            width: 100%;
+                            height: 48px;
+                            color: #6c6c6c;
+                            font-size: 14px;
+                            border: 1px solid #E2DFDD;
+                            border-radius: 5px;
+                            padding: 0 15px;
+                        }
+
+                        i {
+                            position: absolute;
+                            right: 12px;
+                            top: 20px;
+                        }
+                    }
+                }
+
+                .categories {
+                    border: 1px solid #E2DFDD;
+                    padding: 30px;
+                    border-radius: 10px;
+
+                    ul {
+                        margin-top: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        li {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border: 1px solid #E2DFDD;
+                            padding: 16px;
+                            border-radius: 10px;
+                            color: #656565;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .filter {
+                    border: 1px solid #E2DFDD;
+                    padding: 30px;
+                    border-radius: 10px;
+
+                    h2 {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+
+                    .priceFilter {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .filterValue {
+                            color: #6c6c6c;
+                            font-size: 16x;
+                        }
+
+                        button {
+                            background: none;
+                            padding: 4px 16px;
+                            border: 1px solid #9f9f9f;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+
+                .topProduct {
+                    border: 1px solid #E2DFDD;
+                    padding: 30px;
+                    border-radius: 10px;
+
+                    h2 {
+                        margin-bottom: 20px;
+                    }
+
+                    .box {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .imgProduct {
+                            border: 1px solid #E2DFDD;
+                            border-radius: 10px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 10px;
+                            width: 70px;
+                            height: 70px;
+
+                            &:hover {
+                                img {
+                                    transform: scale(1.2);
+                                }
+                            }
+
+                            img {
+                                width: 30px;
+                                object-fit: cover;
+                                transition: 0.4s;
+                            }
+                        }
+
+                        .sideContent {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            justify-content: space-between;
+                            padding: 20px 0;
+
+                            .rate {
+                                display: flex;
+                                align-items: center;
+                                gap: 4px;
+                                font-size: 12px;
+                                color: #C7A17A;
+                            }
+
+                            span {
+                                color: #C7A17A;
+
+                                del {
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #shop {
+        margin: 0;
+        padding: 100px 20px 120px;
+
+        .bottomSide {
+            .mainSide {
+                .leftSide {
+                    .card {
+                        width: 47%;
+                    }
+
+                    .activeCard {
+                        display: flex;
+                        width: 100%;
+                        padding: 0 64px;
+                        min-height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #shop {
+        .bottomSide {
+            .mainSide {
+                flex-wrap: wrap;
+
+                .leftSide {
+                    width: 100%;
+                }
+
+                .rightSide {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #shop {
+        margin: 0;
+
+        .bottomSide {
+            .mainSide {
+                .leftSide {
+                    .card {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #shop {
+        .bottomSide {
+            padding: 0;
+
+            .mainSide {
+                .leftSide {
+                    .card {
+                        width: 100%;
+
+                        .activeSubTitle {
+                            margin-left: 12px;
+
+                            .activePrice {
+                                gap: 2px;
+                                justify-content: start;
+                            }
+                        }
+                    }
+
+                    .activeImg {
+                        max-width: 72px;
+                    }
+
+                    .activeCard {
+                        display: flex;
+                        width: 98%;
+                        padding: 0 24px;
+                        min-height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}

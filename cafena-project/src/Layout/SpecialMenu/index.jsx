@@ -1,9 +1,9 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'
+import React, { useMemo, useRef, useState } from 'react'
 import ProductDetail from './ProductDetail'
 import './index.scss'
 import { useWishlist } from '../../Context/Wishlist'
-import { useBasket } from '../../Context/basket'
-import { useProducts } from '../../Context/product'
+import { useProducts } from './../../Context/Product'
+import { useBasket } from '../../Context/Basket'
 
 function SpecialMenu() {
     

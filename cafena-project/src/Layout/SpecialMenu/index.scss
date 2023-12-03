@@ -1,5 +1,6 @@
 #specialMenu {
-height: 1200px;
+    min-height: 1200px;
+
     .specialMenuContainer {
         display: flex;
         flex-direction: column;
@@ -520,6 +521,8 @@ height: 1200px;
 
 @media screen and (max-width: 992px) {
     #specialMenu {
+        height: max-content;
+        margin-bottom: 12em;
 
         .specialMenuContainer {
             display: flex;
@@ -572,11 +575,12 @@ height: 1200px;
             .popularProductsContainer {
                 display: flex;
                 justify-content: center;
+                height: fit-content;
     
                 .popularProducts {
                     display: grid;
                     grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 250px 250px 250px 250px 250px 250px;
                     grid-template-areas:'grid1'
                                         'grid2'
                                         'grid3'

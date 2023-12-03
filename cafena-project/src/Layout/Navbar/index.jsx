@@ -6,7 +6,7 @@ import SideMenu from './SideMenu';
 import './index.scss'
 import SideBasket from './SideBasket';
 import { usePosition } from '../../Context/Position';
-import { useBasket } from '../../Context/basket';
+import { useBasket } from './../../Context/Basket';
 
 function Navbar() {
 
@@ -93,33 +93,33 @@ function Navbar() {
                     <ul className='navList'>
                         <li className='headNav'><StyledNavLink to="/">HOME</StyledNavLink>
                             <ul className="homeSubNav subNav">
-                                <li><StyledNavLink>HOME 1</StyledNavLink></li>
-                                <li><StyledNavLink>HOME 2</StyledNavLink></li>
-                                <li><StyledNavLink>HOME 3</StyledNavLink></li>
+                                <li><StyledNavLink to='/'>HOME 1</StyledNavLink></li>
+                                <li><StyledNavLink to='/'>HOME 2</StyledNavLink></li>
+                                <li><StyledNavLink to='/'>HOME 3</StyledNavLink></li>
                             </ul>
                         </li>
-                        <li><StyledNavLink to="/">ABOUT</StyledNavLink></li>
-                        <li><StyledNavLink to="/">MENU</StyledNavLink></li>
-                        <li><StyledNavLink to="/">RESERVATION</StyledNavLink></li>
+                        <li><StyledNavLink to="/about">ABOUT</StyledNavLink></li>
+                        <li><StyledNavLink to="/menu">MENU</StyledNavLink></li>
+                        <li><StyledNavLink to="/reservation">RESERVATION</StyledNavLink></li>
                         <li className='headNav'><StyledNavLink to="/">PAGES</StyledNavLink>
                             <ul className="homeSubNav subNav">
-                                <li><StyledNavLink>BLOG</StyledNavLink></li>
-                                <li><StyledNavLink>BLOG DETAILS</StyledNavLink></li>
-                                <li><StyledNavLink>CHEFS</StyledNavLink></li>
-                                <li><StyledNavLink>FAQ</StyledNavLink></li>
-                                <li><StyledNavLink>STORY</StyledNavLink></li>
-                                <li><StyledNavLink>GALLERY</StyledNavLink></li>
+                                <li><StyledNavLink to='/blog'>BLOG</StyledNavLink></li>
+                                <li><StyledNavLink to='/blog/details'>BLOG DETAILS</StyledNavLink></li>
+                                <li><StyledNavLink to='/chefs'>CHEFS</StyledNavLink></li>
+                                <li><StyledNavLink to='/faq'>FAQ</StyledNavLink></li>
+                                <li><StyledNavLink to='/story'>STORY</StyledNavLink></li>
+                                <li><StyledNavLink to='/gallery'>GALLERY</StyledNavLink></li>
                             </ul>
                         </li>
                         <li className='headNav'><StyledNavLink to="/">SHOP</StyledNavLink>
                             <ul className="homeSubNav subNav">
-                                <li><StyledNavLink>SHOP</StyledNavLink></li>
-                                <li><StyledNavLink>SHOP DETAILS</StyledNavLink></li>
-                                <li><StyledNavLink>SHOP CART</StyledNavLink></li>
-                                <li><StyledNavLink>SHOP CHECKOUT</StyledNavLink></li>
+                                <li><StyledNavLink to='/shop'>SHOP</StyledNavLink></li>
+                                <li><StyledNavLink to='/shop/details'>SHOP DETAILS</StyledNavLink></li>
+                                <li><StyledNavLink to='/shop/cart'>SHOP CART</StyledNavLink></li>
+                                <li><StyledNavLink to='/shop/checkout'>SHOP CHECKOUT</StyledNavLink></li>
                             </ul>
                         </li>
-                        <li><StyledNavLink to="/">CONTACT</StyledNavLink></li>
+                        <li><StyledNavLink to="/contact">CONTACT</StyledNavLink></li>
                     </ul>
                 </div>
                 <div className="iconsDiv">
@@ -145,6 +145,7 @@ function Navbar() {
                             <i className="fa-solid fa-xmark sideInfoQuit" onClick={()=>handleSideInfo('close')}></i>
                         </div>
                     </div>
+                    
                     <div className="sideInfoTextBox" >
                         { isInfoOpen ? <SideInfo/> : <HideSideInfo/> }
                         { isInfoOpen ? <HideSideMenu/> : <SideMenu/> }

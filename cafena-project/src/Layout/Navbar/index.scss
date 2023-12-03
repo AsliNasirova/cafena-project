@@ -1,4 +1,9 @@
 #Navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #fff;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -39,23 +44,24 @@
                 .headNav {
                     height: 100%;
                     position: relative;
-
-                    &:hover .subNav {
-                        display: flex;
-                        flex-direction: column;
-                    }
-
+                    
                     .subNav {
                         display: none;
                         row-gap: 10px;
                         width: max-content;
                         position: absolute;
-                        top: 90%;
+                        top: 100%;
                         left: 0;
+                        z-index: 5;
                         padding: 30px;
                         background-color: white;
                         border-radius: 3px;
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 15px;
+                    }
+
+                    &:hover .subNav{
+                        display: flex;
+                        flex-direction: column;
                     }
                 }
             }

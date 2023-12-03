@@ -1,0 +1,204 @@
+#tabDetails {
+    padding: 0 48px;
+
+    .buttonTabs {
+        border-bottom: 1px solid #E2DFDD;
+        padding-bottom: 45px;
+        margin-top: -15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .buttonTab {
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #E2DFDD;
+            padding: 16px 28px;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: #C7A17A;
+                color: #ffffff;
+            }
+        }
+
+        .activeButton {
+            background-color: #C7A17A;
+            color: #ffffff;
+        }
+    }
+
+    .details,
+    .info,
+    .review {
+        display: none;
+    }
+
+    .activeContent {
+        display: flex;
+    }
+
+    .details {
+        padding-top: 35px;
+
+        p {
+            color: #6c6c6c;
+            line-height: 1.6;
+        }
+    }
+
+    .info {
+        width: 100%;
+        padding-top: 35px;
+
+        ul {
+            border: 1px solid #E2DFDD;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                border-bottom: 1px solid #E2DFDD;
+                width: 50%;
+                font-size: 18px;
+                color: #585858;
+                padding: 10px;
+            }
+        }
+    }
+
+    .review {
+        margin-top: 35px;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .comment {
+            width: 100%;
+            display: flex;
+            gap: 16px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #E2DFDD;
+            padding-bottom: 30px;
+
+            .thumb {
+                max-width: 80px;
+            }
+
+            .content {
+                h5 {
+                    font-size: 16px;
+
+                    span {
+                        font-size: 14px;
+                        color: #6c6c6c;
+                        font-weight: 500;
+                    }
+                }
+
+                .rate {
+                    margin: 10px 0;
+
+                    i {
+                        color: #6c6c6c;
+                        font-size: 14px;
+                        font-weight: 100;
+                    }
+                }
+
+                p {
+                    color: #6c6c6c;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        .commentsSide {
+            width: 100%;
+
+            .rate {
+                margin: 10px 0 40px;
+
+                h4 {
+                    font-size: 22px;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: #939393;
+                    margin-right: 4px;
+                }
+
+                i {
+                    font-size: 15px;
+                    color: #848484;
+                    margin: 2px;
+                }
+            }
+        }
+
+        .formSide {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            label {
+                font-size: 18px;
+                color: #676767;
+            }
+
+            .textarea {
+                width: 100%;
+
+                textarea {
+                    width: 100%;
+                    min-height: 120px;
+                    border: 1px solid #E2DFDD;
+                    padding: 10px 15px;
+                    color: #6c6c6c;
+                    margin-top: 10px;
+                }
+            }
+
+            .name,
+            .email {
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+
+                input {
+                    border: 1px solid #E2DFDD;
+                    padding: 16px 15px;
+                    margin-top: 10px;
+
+                }
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #tabDetails {
+        .review {
+            .formSide {
+
+                .name,
+                .email {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    #tabDetails {
+        padding: 0 16px;
+    }
+}
