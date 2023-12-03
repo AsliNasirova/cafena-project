@@ -1,17 +1,17 @@
 import { NavLink } from 'react-router-dom'
 import styled, { } from "styled-components";
-import React, { useState } from 'react'
-import './index.scss'
+import React, { useRef, useState } from 'react'
 import SideInfo from './SideInfo';
 import SideMenu from './SideMenu';
+import './index.scss'
+import SideBasket from './SideBasket';
 
 function Navbar() {
 
     const [isInfoOpen, setIsInfoOpen] = useState(true)
     const [isOpen, setIsOpen] = useState(false)
 
-    // Dropdown's states
-    const [homeOpen, setHomeOpen] = useState(false)
+    const sideInfo = useRef()
 
     const StyledNavLink = styled(NavLink)`
         position: relative;
@@ -60,6 +60,18 @@ function Navbar() {
         setIsOpen(!isOpen)
     }
 
+    function handleSideInfo(state) {
+        if (state === 'close') {
+            sideInfo.current.style.right = '-300px'
+            setTimeout(()=>sideInfo.current.style.display = 'none',300)
+            return
+        }
+        if (state === 'open') {
+            sideInfo.current.style.display = 'flex'
+            setTimeout(()=>sideInfo.current.style.right = '0px',10)
+        }
+    }
+
     return (
         <nav id='Navbar'>
             <div className="NavbarContainer">
@@ -100,8 +112,8 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="iconsDiv">
-                    <i className={`fa-solid fa-${isOpen ? 'xmark' : 'magnifying-glass'}`} onClick={handleModal}></i>
-                    <i className="fa-solid fa-bars"></i>
+                    <i className={`fa-solid fa-${isOpen ? 'xmark' : 'magnifying-glass'}`} onClick={()=>handleModal('close')}></i>
+                    <i className="fa-solid fa-bars" onClick={()=>handleSideInfo('open')}></i>
                     <i className="fa-solid fa-basket-shopping basket_icon"><div className="basketProductCount">3</div></i>
 
                     <div className="searchForm" style={!isOpen ? { display: 'none' } : { display: 'block' }}>
@@ -111,7 +123,7 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="sideInfo" style={{display:'none'}}>
+                <div className="sideInfo" ref={sideInfo}>
                     <div className="sideInfoTitleBox">
                         <div className="sideInfoNav">
                             <div className="sideInfoMenuBtn sideInfoBtns" onClick={() => handleInfo(false)} style={isInfoOpen ? { backgroundColor: 'white', color: 'black' } : { backgroundColor: 'black', color: 'white' }}><span>MENU</span></div>
@@ -119,7 +131,7 @@ function Navbar() {
                         </div>
                         <div className="sideInfoHead">
                             <img src="https://xpressrow.com/html/cafena/cafena/assets/images/logo/logo-black.png" alt="" />
-                            <i className="fa-solid fa-xmark sideInfoQuit"></i>
+                            <i className="fa-solid fa-xmark sideInfoQuit" onClick={()=>handleSideInfo('close')}></i>
                         </div>
                     </div>
                     <div className="sideInfoTextBox" >
@@ -127,6 +139,7 @@ function Navbar() {
                         { isInfoOpen ? <HideSideMenu/> : <SideMenu/> }
                     </div>
                 </div>
+                <SideBasket/>
             </div>
         </nav>
     )

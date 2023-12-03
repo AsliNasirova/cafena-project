@@ -1,12 +1,12 @@
-#specialMenu{
+#specialMenu {
     // background-color: tomato;
 
-    .specialMenuContainer{
+    .specialMenuContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .specialMenuTitle{
+        .specialMenuTitle {
             color: white;
             background-color: #c7a17a;
             font-weight: 700;
@@ -16,12 +16,12 @@
             margin-bottom: 23px;
         }
 
-        .popularMenu{
+        .popularMenu {
             font-size: 45px;
             margin-bottom: 40px;
         }
 
-        .specialMenuFilterBox{
+        .specialMenuFilterBox {
             display: flex;
             align-items: center;
             column-gap: 10px;
@@ -30,7 +30,7 @@
             flex-wrap: wrap;
             margin-bottom: 55px;
 
-            .filterItem{
+            .filterItem {
                 cursor: pointer;
                 color: #6c6c6c;
                 padding: 10px 28px;
@@ -39,7 +39,7 @@
                 border: 0px;
                 transition: 0.3s;
 
-                &:hover{
+                &:hover {
                     font-weight: 500;
                     background-color: #c7a17a;
                     border-radius: 5px;
@@ -49,40 +49,48 @@
             }
         }
 
-        .popularProductsContainer{
+        .popularProductsContainer {
             display: flex;
             justify-content: center;
 
-            .popularProducts{
+            .popularProducts {
                 display: grid;
                 grid-template-columns: 356px 356px 356px;
                 grid-template-rows: 1fr 1fr;
-                grid-template-areas:'grid1 grid2 grid3'
-                                    'grid5 grid4 grid6';
+                grid-template-areas: 'grid1 grid2 grid3'
+                    'grid5 grid4 grid6';
                 column-gap: 30px;
                 row-gap: 200px;
-                
-                .popularProduct{
+
+                .popularProduct {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
                     width: 100%;
-                    height: max-content ;
+                    height: max-content;
 
-                    .popularProductImgBox{
+                    &:hover {
+
+                        .popularProductImgBox>img {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    .popularProductImgBox {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         overflow: hidden;
-                        
-                        img{
+
+                        img {
                             border-radius: 10px;
                             min-width: 100%;
                             max-height: 100%;
+                            transition: 0.3s;
                         }
                     }
 
-                    .popularProductTextBox{
+                    .popularProductTextBox {
                         padding: 30px 40px;
                         margin: 0px 25px;
                         border-radius: 10px;
@@ -92,13 +100,46 @@
                         justify-content: center;
                         align-items: center;
                         row-gap: 10px;
+                        background-color: #eee;
+                        max-width: 326px;
+                        height: 181px;
                         // And here
 
-                        .popularProductIconBox{
+                        .popularProductName {
+                            font-size: 30px;
+                            font-family: 'Bebas Neue', sans-serif;
+                        }
+
+                        .popularProductPriceTag {
+                            font-size: 16px;
+
+                            .popularProductPrice {
+                                color: #c9a47e;
+                            }
+                        }
+
+                        .popularProductsIconsBox {
                             display: flex;
-                            justify-content: space-between;
+                            justify-content: space-evenly;
                             align-items: center;
-                            // Contuine From here
+                            width: 60%;
+
+                            .productIconBox {
+                                cursor: pointer;
+                                width: 35px;
+                                height: 35px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 1px solid #E2DFDD;
+                                border-radius: 6px;
+                                transition: 0.4s;
+
+                                &:hover {
+                                    color: #70502f;
+                                    border: 1px solid rgb(112, 80, 47);
+                                }
+                            }
                         }
                     }
                 }
@@ -107,7 +148,7 @@
     }
 }
 
-.selected{
+.selected {
     font-weight: 500;
     background-color: #c7a17a !important;
     border-radius: 5px;
