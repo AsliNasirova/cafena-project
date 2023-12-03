@@ -55,6 +55,10 @@ function Navbar() {
             display: 'none';
         `
 
+    function handlePosition() {
+        setTimeout(()=>setPosition('0px'),10)
+    }
+
     function handleInfo(bool) {
         setIsInfoOpen(bool)
     }
@@ -117,7 +121,7 @@ function Navbar() {
                 <div className="iconsDiv">
                     <i className={`fa-solid fa-${isOpen ? 'xmark' : 'magnifying-glass'}`} onClick={()=>handleModal('close')}></i>
                     <i className="fa-solid fa-bars" onClick={()=>handleSideInfo('open')}></i>
-                    <i className="fa-solid fa-basket-shopping basket_icon" onClick={()=>setPosition('0px')}><div className="basketProductCount">3</div></i>
+                    <i className="fa-solid fa-basket-shopping basket_icon" onClick={handlePosition}><div className="basketProductCount">3</div></i>
 
                     <div className="searchForm" style={!isOpen ? { display: 'none' } : { display: 'block' }}>
                         <div className="searchBox">

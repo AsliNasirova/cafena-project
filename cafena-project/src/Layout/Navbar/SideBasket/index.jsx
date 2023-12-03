@@ -4,11 +4,15 @@ import { usePosition } from '../../../Context/Position'
 
 function SideBasket() {
 
-    const {position, setPosition} = usePosition()
+    const { position, setPosition, display, setDisplay } = usePosition()
+
+    function handleBasket() {
+        setPosition('-300px')
+    }
 
     return (
-        <div className='sideBasket' style={{right:`${position}`}}>
-            <div className="exitBtn" onClick={()=>setPosition('-300px')}>
+        <div className='sideBasket' style={{ right: `${position}`, display:`${display}` }}>
+            <div className="exitBtn" onClick={handleBasket}>
                 <i className="fa-solid fa-xmark"></i>
             </div>
 

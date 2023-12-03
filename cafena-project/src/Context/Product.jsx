@@ -5,16 +5,21 @@ const ProductContext=createContext()
 
 export const ProductProvider=({children})=>{
 
-    const baseURL = 'http://localhost:3000/Cafena-API/db.json'
+    const baseURL = 'http://localhost:3000/products'
 
-    const [data, setData] = useState([])
+    const [products, setProducts] = useState([])
 
     useEffect(() => {
       useFetch(baseURL, handleData)
     }, [])
 
     function handleData(data) {
-        setData(data)
+        setProducts(data)
+    }
+
+    const data = {
+        products,
+        setProducts
     }
 
     return(
@@ -25,4 +30,4 @@ export const ProductProvider=({children})=>{
 
 }
 
-export const useData=()=>useContext(ProductContext)
+export const useProducts=()=>useContext(ProductContext)

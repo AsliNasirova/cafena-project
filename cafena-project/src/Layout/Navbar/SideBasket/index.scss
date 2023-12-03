@@ -3,7 +3,8 @@
     height: 100vh;
     position: absolute;
     top: 0;
-    right: -200px;
+    right: -300px;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
