@@ -12,5 +12,27 @@
             color: #cd8d16;
             transition: 0.3s;
         }
+
+        .sideSubNav{
+            max-height: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow: hidden;
+            transition: 0.3s;
+            
+            li a{
+                font-size: 13px;
+                padding: 0 30px;
+            }
+        }
     }
+
+    .defaultList{
+        margin-bottom: 20px;
+    }
+}
+
+.active{
+    max-height: 100% !important;
 }

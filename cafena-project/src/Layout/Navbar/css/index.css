@@ -1,0 +1,33 @@
+.sideNav {
+    display: flex;
+    flex-direction: column;
+  }
+  .sideNav li {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sideNav li i:hover {
+    cursor: pointer;
+    color: #cd8d16;
+    transition: 0.3s;
+  }
+  .sideNav li .sideSubNav {
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .sideNav li .sideSubNav li a {
+    font-size: 13px;
+    padding: 0 30px;
+  }
+  .sideNav .defaultList {
+    margin-bottom: 20px;
+  }
+  
+  .active {
+    max-height: 100% !important;
+  }/*# sourceMappingURL=index.css.map */

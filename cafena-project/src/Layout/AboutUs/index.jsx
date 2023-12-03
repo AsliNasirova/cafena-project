@@ -28,7 +28,7 @@ function AboutUs() {
         </div>
       </section>
 
-      <AboutUs_About/>
+      {/* <AboutUs_About/> */}
     </>
   )
 }
