@@ -1,15 +1,13 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import './index.scss'
 import { usePosition } from '../../../Context/Position'
 
 function SideBasket() {
 
-    const Basket = useRef()
-
     const {position, setPosition} = usePosition()
 
     return (
-        <div className='sideBasket' ref={Basket} style={{right:`${position}`}}>
+        <div className='sideBasket' style={{right:`${position}`}}>
             <div className="exitBtn" onClick={()=>setPosition('-300px')}>
                 <i className="fa-solid fa-xmark"></i>
             </div>
