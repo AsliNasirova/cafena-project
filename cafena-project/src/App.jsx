@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import './App.css'
 import Navbar from './Layout/Navbar'
 import { ProductProvider } from './Context/Product';
+import { PositionProvider } from './Context/Position';
 
 function App() {
 
@@ -10,7 +11,9 @@ function App() {
   return (
     <ProductProvider>
     <BrowserRouter>
+      <PositionProvider>
       <Navbar />
+      </PositionProvider>
       <Home />
     </BrowserRouter>
     </ProductProvider>

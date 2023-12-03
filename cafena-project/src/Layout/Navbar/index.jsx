@@ -5,6 +5,7 @@ import SideInfo from './SideInfo';
 import SideMenu from './SideMenu';
 import './index.scss'
 import SideBasket from './SideBasket';
+import { usePosition } from '../../Context/Position';
 
 function Navbar() {
 
@@ -12,6 +13,8 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     const sideInfo = useRef()
+
+    const {setPosition} = usePosition()
 
     const StyledNavLink = styled(NavLink)`
         position: relative;
@@ -114,7 +117,7 @@ function Navbar() {
                 <div className="iconsDiv">
                     <i className={`fa-solid fa-${isOpen ? 'xmark' : 'magnifying-glass'}`} onClick={()=>handleModal('close')}></i>
                     <i className="fa-solid fa-bars" onClick={()=>handleSideInfo('open')}></i>
-                    <i className="fa-solid fa-basket-shopping basket_icon"><div className="basketProductCount">3</div></i>
+                    <i className="fa-solid fa-basket-shopping basket_icon" onClick={()=>setPosition('0px')}><div className="basketProductCount">3</div></i>
 
                     <div className="searchForm" style={!isOpen ? { display: 'none' } : { display: 'block' }}>
                         <div className="searchBox">
