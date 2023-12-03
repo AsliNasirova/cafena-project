@@ -1,21 +1,13 @@
-import { BrowserRouter } from "react-router-dom";
-import './App.css';
-import AboutUs_About from './Layout/AboutUs_About';
-import About from './Pages/About';
+import { useState } from 'react'
+import './App.css'
 
 function App() {
 
 
   return (
-    <BrowserRouter>
-      {/* <Navbar /> */}
-    {/* <Navbar/> */}
-    {/* <Home/> */}
-    {/* <About/> */}
-    {/* <Footer/> */}
-    {/* <Home /> */}
-    <AboutUs_About/>
-    </BrowserRouter>
+    <>
+      
+    </>
   )
 }
 

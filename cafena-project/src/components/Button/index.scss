@@ -1,0 +1,40 @@
+
+.btn_one {
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    background-color: #C7A17A;
+    padding: 16px 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #C7A17A;
+    border-radius: 5px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        background-color: #32323D;
+        color: #ffffff;
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        transition: 0.5s;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    &:hover {
+        border: 1px solid #32323D;
+
+        &::after {
+            width: 100%;
+            left: 0;
+            overflow: hidden;
+        }
+    }
+}

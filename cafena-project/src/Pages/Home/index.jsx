@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import SpecialMenu from '../../Layout/SpecialMenu'
 
 function Home() {
@@ -7,6 +8,17 @@ function Home() {
       
     </main>
   )
+=======
+
+function Home() {
+    return (
+        <main>
+            <Distinct />
+            <Review />
+            <NewsBlog />
+        </main>
+    )
+>>>>>>> origin/nihad
 }
 
 export default Home
