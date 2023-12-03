@@ -1,22 +1,20 @@
-import Home from './Pages/Home'
 import { BrowserRouter } from "react-router-dom";
-import './App.css'
-import Navbar from './Layout/Navbar'
-import Footer from './Layout/Footer'
-import Navbar from './Layout/Navbar'
-import About from './Pages/About'
-import Home from './Pages/Home'
+import './App.css';
+import AboutUs_About from './Layout/AboutUs_About';
+import About from './Pages/About';
 
 function App() {
 
 
   return (
     <BrowserRouter>
-      <Navbar />
-    <Navbar/>
+      {/* <Navbar /> */}
+    {/* <Navbar/> */}
     {/* <Home/> */}
-    <About/>
-    {/* <Footer/> */}<Home />
+    {/* <About/> */}
+    {/* <Footer/> */}
+    {/* <Home /> */}
+    <AboutUs_About/>
     </BrowserRouter>
   )
 }

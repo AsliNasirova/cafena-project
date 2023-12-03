@@ -356,8 +356,11 @@
     background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/bg/best-coffe-1.jpeg);
     margin-top: 92px;
     background-repeat: no-repeat;
+   
 
     .best_coffe_area {
+        display: flex;
+        justify-content: center;
         position: relative;
         padding-top: 70px;
         padding-bottom: 75px;
@@ -376,8 +379,8 @@
         }
 
         .text_best_coffe_area {
-            margin-left: 572px;
-            width: 796px;
+            margin-left: 550px;
+            max-width: 796px;
             position: relative;
             z-index: 2;
             background: #ffffff;
@@ -406,6 +409,65 @@
     }
 }
 
+
+@media screen and (max-width:1200px) {
+    #best_coffee {
+        background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/bg/best-coffe-1.jpeg);
+        margin-top: 92px;
+        background-repeat: no-repeat;
+       
+    
+        .best_coffe_area {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding-top: 70px;
+            padding-bottom: 75px;
+    
+            .best_coffe_bg {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 50%;
+    
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .text_best_coffe_area {
+                margin-left: 0px;
+                max-width: 796px;
+                position: relative;
+                z-index: 2;
+                background: #ffffff;
+                box-shadow: 0px 14px 40px 0px rgba(220, 220, 220, 0.3);
+                border-radius: 10px;
+                border: 1px solid #E2DFDD;
+                padding-top: 80px;
+                padding-left: 100px;
+                padding-right: 130px;
+                padding-bottom: 80px;
+    
+                h2 {
+                    font-size: 40px;
+                    line-height: 57px;
+                    text-transform: uppercase;
+                    color: #000;
+                    margin-bottom: 25px;
+                }
+    
+                p {
+                    font-size: 20px;
+                    margin-bottom: 35px;
+                    color: #6c6c6c;
+                }
+            }
+        }
+    }
+}
 ///////////////////////////////////
 #Professional {
     min-height: 100vh;
@@ -595,6 +657,7 @@
 
 ///////////////////////////////////
 #footer {
+    margin: 0 auto;
     position: relative;
     padding-top: 20px;
     width: 100%;
