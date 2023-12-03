@@ -1,16 +1,20 @@
 import { NavLink } from 'react-router-dom'
 import styled, { } from "styled-components";
-import React, { useRef, useState } from 'react'
+import React, { useMemo, useRef, useState } from 'react'
 import SideInfo from './SideInfo';
 import SideMenu from './SideMenu';
 import './index.scss'
 import SideBasket from './SideBasket';
 import { usePosition } from '../../Context/Position';
+import { useBasket } from '../../Context/Basket';
 
 function Navbar() {
 
+    const { basket, setBasket, addToBasket } = useBasket()
     const [isInfoOpen, setIsInfoOpen] = useState(true)
     const [isOpen, setIsOpen] = useState(false)
+
+    const Count = useMemo(()=>basket.length)
 
     const sideInfo = useRef()
 
@@ -121,7 +125,7 @@ function Navbar() {
                 <div className="iconsDiv">
                     <i className={`fa-solid fa-${isOpen ? 'xmark' : 'magnifying-glass'}`} onClick={()=>handleModal('close')}></i>
                     <i className="fa-solid fa-bars" onClick={()=>handleSideInfo('open')}></i>
-                    <i className="fa-solid fa-basket-shopping basket_icon" onClick={handlePosition}><div className="basketProductCount">3</div></i>
+                    <i className="fa-solid fa-basket-shopping basket_icon" onClick={handlePosition}><div className="basketProductCount">{Count}</div></i>
 
                     <div className="searchForm" style={!isOpen ? { display: 'none' } : { display: 'block' }}>
                         <div className="searchBox">

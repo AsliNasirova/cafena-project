@@ -4,18 +4,21 @@ import './App.css'
 import Navbar from './Layout/Navbar'
 import { ProductProvider } from './Context/Product';
 import { PositionProvider } from './Context/Position';
+import { BasketProvider } from './Context/Basket';
 
 function App() {
 
 
   return (
     <ProductProvider>
-    <BrowserRouter>
-      <PositionProvider>
-      <Navbar />
-      </PositionProvider>
-      <Home />
-    </BrowserRouter>
+      <BasketProvider>
+        <BrowserRouter>
+          <PositionProvider>
+            <Navbar />
+          </PositionProvider>
+          <Home />
+        </BrowserRouter>
+      </BasketProvider>
     </ProductProvider>
   )
 }

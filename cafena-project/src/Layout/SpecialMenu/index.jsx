@@ -1,13 +1,17 @@
-import React, { useMemo, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { useProducts } from '../../Context/Product'
 import ProductDetail from './ProductDetail'
 import './index.scss'
+import { useBasket } from '../../Context/Basket'
 
 function SpecialMenu() {
+    
+    const { products } = useProducts()
+    const { basket, setBasket, addToBasket } = useBasket()
+    
 
     const FiltersBox = useRef()
     const [filters, setFilters] = useState('all')
-    const { products } = useProducts()
     const [id, setId] = useState()
 
     const FilteredProducts = useMemo(()=> filters && filters==='all' ? products : products.filter((item)=> item.category.includes(filters)), [filters, products])
@@ -55,7 +59,7 @@ function SpecialMenu() {
                                     <h3 className="popularProductName">{product.name.toUpperCase()}</h3>
                                     <span className="popularProductPrice">PRICE-$ <span className='productPrice'>{(parseFloat(product.price) * (100 - product.discount)) / 100} / <span className='oldPrice'>{product.price}</span></span></span>
                                     <div className="popularProductsIconsBox">
-                                        <div className="productIconBox"><i className="fa-solid fa-basket-shopping"></i></div>
+                                        <div className="productIconBox" onClick={()=>addToBasket(product)}><i className="fa-solid fa-basket-shopping"></i></div>
                                         <div className="productIconBox"><i className="fa-regular fa-heart"></i></div>
                                         <div className="productIconBox" onClick={()=>setId(product.id)}><i className="fa-regular fa-eye"></i></div>
                                     </div>

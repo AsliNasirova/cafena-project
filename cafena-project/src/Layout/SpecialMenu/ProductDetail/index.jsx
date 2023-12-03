@@ -1,14 +1,21 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useState } from 'react'
 import { useProducts } from '../../../Context/Product'
+import { useBasket } from '../../../Context/Basket'
 
 function ProductDetail({id,setId}) {
 
     const {products} = useProducts()
+    const { basket, setBasket, addToBasket } = useBasket()
 
+    const [count, setCount] = useState(1)
     const product = useMemo(()=>products.filter((item)=> item.id === id)[0],[id])
 
     function hideModal() {
         setId('')
+    }
+
+    function handleInput(e) {
+        setCount(+e.value)
     }
 
     return (
@@ -24,8 +31,8 @@ function ProductDetail({id,setId}) {
                     <span className="modalProductDescription">{product.description}</span>
                     <div className="modalProductQYT">
                         <span>QYT</span>
-                        <input type="number" min={1} name="" defaultValue={1} id="modalProductAddingCount" />
-                        <button className='modalProductAdd'>ADD TO CART</button>
+                        <input type="number" min={1} onChange={(e)=>handleInput(e.target)} defaultValue={1} id="modalProductAddingCount" />
+                        <button className='modalProductAdd'onClick={()=>addToBasket(product,count)} >ADD TO CART</button>
                     </div>
                     <span className='modalProductCategory'>Category: {product.category[0]}</span>
                 </div>
