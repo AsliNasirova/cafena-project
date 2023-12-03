@@ -1,0 +1,71 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name":"Americano Coffee",
+            "img": "https://xpressrow.com/html/cafena/cafena/assets/images/products/pp-1.png",
+            "popularImg":"https://xpressrow.com/html/cafena/cafena/assets/images/menu/menu-1.jpeg",
+            "price":"25.00",
+            "inStock": 10,
+            "description": "Anlor sit amet, consectetur adipiscing elit. Fusce condimentum est lacus, non pretium risus lacinia vel. Fusce eget turpis orci.",
+            "discount": 20,
+            "category":["coffee","chocolate"]
+        },
+        {
+            "id": 2,
+            "name":"CAFFE LATTE",
+            "img": "https://xpressrow.com/html/cafena/cafena/assets/images/products/pp-2.png",
+            "popularImg":"https://xpressrow.com/html/cafena/cafena/assets/images/menu/menu-2.jpeg",
+            "price":"45.00",
+            "inStock": 10,
+            "description": "Anlor sit amet, consectetur adipiscing elit. Fusce condimentum est lacus, non pretium risus lacinia vel. Fusce eget turpis orci.",
+            "discount": 20,
+            "category":["sandwiches","black tea"]
+        },
+        {
+            "id": 3,
+            "name":"ESPRESSO RISTRETTO",
+            "img": "https://xpressrow.com/html/cafena/cafena/assets/images/products/pp-3.png",
+            "popularImg":"https://xpressrow.com/html/cafena/cafena/assets/images/menu/menu-3.jpeg",
+            "price":"65.00",
+            "inStock": 10,
+            "description": "Anlor sit amet, consectetur adipiscing elit. Fusce condimentum est lacus, non pretium risus lacinia vel. Fusce eget turpis orci.",
+            "discount": 20,
+            "category":["green tea","sweets","coffee"]
+        },
+        {
+            "id": 4,
+            "name":"LATTE MACCHIATO",
+            "img": "https://xpressrow.com/html/cafena/cafena/assets/images/products/pp-1.png",
+            "popularImg":"https://xpressrow.com/html/cafena/cafena/assets/images/menu/menu-4.jpeg",
+            "price":"15.00",
+            "inStock": 10,
+            "description": "Anlor sit amet, consectetur adipiscing elit. Fusce condimentum est lacus, non pretium risus lacinia vel. Fusce eget turpis orci.",
+            "discount": 20,
+            "category":["coffee","sweets","chocolate"]
+        },
+        {
+            "id": 5,
+            "name":"ESPRESSO LUNGO",
+            "img": "https://xpressrow.com/html/cafena/cafena/assets/images/products/pp-2.png",
+            "popularImg":"https://xpressrow.com/html/cafena/cafena/assets/images/menu/menu-5.jpeg",
+            "price":"75.00",
+            "inStock": 10,
+            "description": "Anlor sit amet, consectetur adipiscing elit. Fusce condimentum est lacus, non pretium risus lacinia vel. Fusce eget turpis orci.",
+            "discount": 20,
+            "category":["green tea"]
+        },
+        {
+            "id": 6,
+            "name":"CAFE AU LAIT",
+            "img": "https://xpressrow.com/html/cafena/cafena/assets/images/products/pp-3.png",
+            "popularImg":"https://xpressrow.com/html/cafena/cafena/assets/images/menu/menu-6.jpeg",
+            "price":"100.00",
+            "inStock": 10,
+            "description": "Anlor sit amet, consectetur adipiscing elit. Fusce condimentum est lacus, non pretium risus lacinia vel. Fusce eget turpis orci.",
+            "discount": 20,
+            "category":["sandwiches","black tea","coffee"]
+        }
+    ],
+    "basket":[]
+}
