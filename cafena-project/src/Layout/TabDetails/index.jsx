@@ -73,7 +73,7 @@ function TabDetails() {
           <div className="commentsSide">
             <h4>Add a Review</h4>
             <div class="rate">
-              <span>Your Rating:</span>
+              <span className='rating'>Your Rating:</span>
               <i className="fa-regular fa-star"></i>
               <i className="fa-regular fa-star"></i>
               <i className="fa-regular fa-star"></i>
