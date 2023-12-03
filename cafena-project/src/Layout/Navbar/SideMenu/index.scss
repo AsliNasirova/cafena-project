@@ -1,0 +1,16 @@
+.sideNav{
+    display: flex;
+    flex-direction: column;
+
+    li{
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        
+        i:hover{
+            cursor: pointer;
+            color: #cd8d16;
+            transition: 0.3s;
+        }
+    }
+}

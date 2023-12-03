@@ -1,13 +1,10 @@
 import React from 'react'
-import AboutUs from '../../Layout/AboutUs'
-import TopGrade from '../../Layout/TopGrade'
+import SpecialMenu from '../../Layout/SpecialMenu'
 
 function Home() {
   return (
     <main>
       
-      <AboutUs/>
-      <TopGrade/>
     </main>
   )
 }
