@@ -25,7 +25,7 @@ const data = [
 ]
 function Faq() {
     const [select, setSelect] = useState(null)
-    const toggle =(i)=>{
+    const toggle = (i) => {
         if (select === i) {
             return setSelect(null)
         }
@@ -34,11 +34,22 @@ function Faq() {
     return (
         <main>
             <section id='faq'>
+                <div className="topSide">
+                    <h2>asking question</h2>
+                    <a href="" className='firstLink'>HOME /</a>
+                    <a href="" className='secondLink'>FAQ</a>
+                    <div className="shape_1">
+                        <img src="https://xpressrow.com/html/cafena/cafena/assets/images/shape/breadcrumb-shape-1.png" alt="" />
+                    </div>
+                    <div className="shape_2">
+                        <img src="https://xpressrow.com/html/cafena/cafena/assets/images/shape/breadcrumb-shape-2.png" alt="" />
+                    </div>
+                </div>
                 <div className="accordion">
-                    {data && data.map((item,i)=>(
+                    {data && data.map((item, i) => (
                         <div className="item">
-                            <div className="title" onClick={()=>toggle(i)}>
-                                <i className={select === i ? 'fa-solid fa-arrow-down rotate' :'fa-solid fa-arrow-down'}></i>
+                            <div className="title" onClick={() => toggle(i)}>
+                                <i className={select === i ? 'fa-solid fa-arrow-down rotate' : 'fa-solid fa-arrow-down'}></i>
                                 <h2>{item.question}</h2>
                             </div>
                             <div className={select === i ? "content show" : "content"}>
