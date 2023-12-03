@@ -3,10 +3,12 @@ import { useProducts } from '../../Context/Product'
 import ProductDetail from './ProductDetail'
 import './index.scss'
 import { useBasket } from '../../Context/Basket'
+import { useWishlist } from '../../Context/Wishlist'
 
 function SpecialMenu() {
     
     const { products } = useProducts()
+    const { wishlist, setWishlist, addToWishlist } = useWishlist()
     const { basket, setBasket, addToBasket } = useBasket()
     
 
@@ -60,7 +62,7 @@ function SpecialMenu() {
                                     <span className="popularProductPrice">PRICE-$ <span className='productPrice'>{(parseFloat(product.price) * (100 - product.discount)) / 100} / <span className='oldPrice'>{product.price}</span></span></span>
                                     <div className="popularProductsIconsBox">
                                         <div className="productIconBox" onClick={()=>addToBasket(product)}><i className="fa-solid fa-basket-shopping"></i></div>
-                                        <div className="productIconBox"><i className="fa-regular fa-heart"></i></div>
+                                        <div className="productIconBox" onClick={()=>addToWishlist(product)}><i className={`fa-${ wishlist.find((item)=> item.id === product.id) ? 'solid' : 'regular'} fa-heart`}></i></div>
                                         <div className="productIconBox" onClick={()=>setId(product.id)}><i className="fa-regular fa-eye"></i></div>
                                     </div>
                                 </div>

@@ -5,6 +5,7 @@ import Navbar from './Layout/Navbar'
 import { ProductProvider } from './Context/Product';
 import { PositionProvider } from './Context/Position';
 import { BasketProvider } from './Context/Basket';
+import { WishlistProvider } from './Context/Wishlist';
 
 function App() {
 
@@ -12,12 +13,14 @@ function App() {
   return (
     <ProductProvider>
       <BasketProvider>
-        <BrowserRouter>
-          <PositionProvider>
-            <Navbar />
-          </PositionProvider>
-          <Home />
-        </BrowserRouter>
+        <WishlistProvider>
+          <BrowserRouter>
+            <PositionProvider>
+              <Navbar />
+            </PositionProvider>
+            <Home />
+          </BrowserRouter>
+        </WishlistProvider>
       </BasketProvider>
     </ProductProvider>
   )
