@@ -575,8 +575,8 @@
     
                 .popularProducts {
                     display: grid;
-                    grid-template-columns: 516px;
-                    grid-template-rows: 371px 371px 371px 371px 371px 371px;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
                     grid-template-areas:'grid1'
                                         'grid2'
                                         'grid3'

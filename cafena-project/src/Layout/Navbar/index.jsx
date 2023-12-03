@@ -146,7 +146,7 @@ function Navbar() {
                         </div>
                     </div>
                     <div className="sideInfoTextBox" >
-                        { isInfoOpen ? <SideInfo /> : <HideSideInfo/> }
+                        { isInfoOpen ? <SideInfo/> : <HideSideInfo/> }
                         { isInfoOpen ? <HideSideMenu/> : <SideMenu/> }
                     </div>
                 </div>
