@@ -22,7 +22,9 @@
 
         .specialMenuFilterBox {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
             column-gap: 10px;
             border: 1px solid #E2DFDD;
             border-radius: 5px;
@@ -93,7 +95,7 @@
                     }
 
                     .popularProductTextBox {
-                        padding: 30px 40px;
+                        padding: 30px 20px;
                         margin: 0px 25px;
                         border-radius: 10px;
                         background-color: white;
@@ -103,13 +105,14 @@
                         align-items: center;
                         row-gap: 10px;
                         background-color: #eee;
-                        width: 306px;
-                        height: 181px;
+                        width: 326px;
+                        height: max-content;
                         position: absolute;
                         top: 80%;
-                        left: 0;
+                        left: -10px;
 
                         .popularProductName {
+                            word-break: keep-all;
                             font-size: 27px;
                             font-family: 'Bebas Neue', sans-serif;
                         }
@@ -131,7 +134,7 @@
                             display: flex;
                             justify-content: space-evenly;
                             align-items: center;
-                            width: 60%;
+                            width: 50%;
 
                             .productIconBox {
                                 cursor: pointer;
@@ -168,7 +171,7 @@
                         .popularProductModal{
                             display: flex;
                             align-items: center;
-                            width: 1100px;
+                            max-width: 1100px;
                             height: 460px;
                             position: absolute;
                             background-color: #242627;
@@ -246,6 +249,532 @@
                                 align-items: center;
                                 background-color: #000;
                                 border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #specialMenu {
+
+        .specialMenuContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .specialMenuTitle {
+                color: white;
+                background-color: #c7a17a;
+                font-weight: 700;
+                letter-spacing: 2px;
+                padding: 5px 13px;
+                border-radius: 4px;
+                margin-bottom: 23px;
+            }
+    
+            .popularMenu {
+                font-size: 45px;
+                margin-bottom: 40px;
+            }
+    
+            .specialMenuFilterBox {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                border: 1px solid #E2DFDD;
+                border-radius: 5px;
+                flex-wrap: wrap;
+                margin-bottom: 55px;
+    
+                .filterItem {
+                    cursor: pointer;
+                    color: #6c6c6c;
+                    padding: 10px 28px;
+                    font-size: 15px;
+                    background-color: transparent;
+                    border: 0px;
+                    transition: 0.3s;
+    
+                    &:hover {
+                        font-weight: 500;
+                        background-color: #c7a17a;
+                        border-radius: 5px;
+                        color: white;
+    
+                    }
+                }
+            }
+    
+            .popularProductsContainer {
+                display: flex;
+                justify-content: center;
+    
+                .popularProducts {
+                    display: grid;
+                    grid-template-columns: 456px 456px;
+                    grid-template-rows: 371px 371px 371px;
+                    grid-template-areas:'grid1 grid2'
+                                        'grid3 grid4'
+                                        'grid5 grid6';
+                    column-gap: 30px;
+                    row-gap: 200px;
+    
+                    .popularProduct {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 100%;
+                        height: max-content;
+    
+                        &:hover {
+    
+                            .popularProductImgBox>img {
+                                transform: scale(1.1);
+                            }
+                        }
+    
+                        .popularProductImgBox {
+                            width: 100%;
+                            height: 255px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 10px;
+                            overflow: hidden;
+    
+                            img {
+                                min-width: 100%;
+                                min-height: 100%;
+                                transition: 0.3s;
+                            }
+                        }
+    
+                        .popularProductTextBox {
+                            padding: 30px 40px;
+                            margin: 0px 25px;
+                            border-radius: 10px;
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            row-gap: 10px;
+                            background-color: #eee;
+                            width: 356px;
+                            height: 181px;
+                            position: absolute;
+                            top: 80%;
+                            left: calc(50% - 203px);
+    
+                            .popularProductName {
+                                font-size: 27px;
+                                font-family: 'Bebas Neue', sans-serif;
+                            }
+    
+                            .popularProductPrice {
+                                font-size: 15px;
+    
+                                .productPrice {
+                                    color: #c9a47e;
+    
+                                    .oldPrice{
+                                        text-decoration: line-through;
+                                        color: #6c6c6c;
+                                    }
+                                }
+                            }
+    
+                            .popularProductsIconsBox {
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                width: 60%;
+    
+                                .productIconBox {
+                                    cursor: pointer;
+                                    width: 35px;
+                                    height: 35px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 1px solid #E2DFDD;
+                                    border-radius: 6px;
+                                    transition: 0.4s;
+    
+                                    &:hover {
+                                        color: #70502f;
+                                        border: 1px solid rgb(112, 80, 47);
+                                    }
+                                }
+                            }
+                        }
+    
+                        .popularProductModalContainer{
+                            width: 100%;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            z-index: 6;
+                            background-color: rgba( #000 , 0.3);
+    
+                            // ProductDetail Style
+                            .popularProductModal{
+                                display: flex;
+                                align-items: center;
+                                max-width: 800px;
+                                height: 460px;
+                                position: absolute;
+                                background-color: #242627;
+                                border-radius: 10px;
+                                padding: 40px;
+    
+                                .modalProductImgBox{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100%;
+                                    width: 324px;
+                                    padding: 30px 60px;
+    
+                                    img{
+                                        min-width: 100%;
+                                        max-height: 100%;
+                                    }
+                                }
+    
+                                .modalProductTextBox{
+                                    height: 100%;
+                                    width: calc(1100px - 324px);
+                                    padding: 20px 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+    
+                                    .modalProductName{
+                                        font-size: 25px;
+                                    }
+    
+                                    .modalProductPrice{
+                                        font-size: 20px;
+                                    }
+    
+                                    .modalProductInStock{
+                                        font-size: 17px;
+                                    }
+    
+                                    .modalProductDescription{
+                                        line-height: 2em;
+                                        color: #6c6c6c;
+                                    }
+    
+                                    .modalProductQYT{
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 10px;
+    
+                                        span{
+                                            font-weight: 500;
+                                        }
+    
+                                        #modalProductAddingCount{
+                                            width: 100px;
+                                            height: 50px;
+                                            padding: 0 10px;
+                                            border-radius: 4px;
+                                            border: 1px solid #808080;
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+    
+                                .modalExitBtn{
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 20px;
+                                    cursor: pointer;
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #000;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #specialMenu {
+
+        .specialMenuContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .specialMenuTitle {
+                color: white;
+                background-color: #c7a17a;
+                font-weight: 700;
+                letter-spacing: 2px;
+                padding: 5px 13px;
+                border-radius: 4px;
+                margin-bottom: 23px;
+            }
+    
+            .popularMenu {
+                font-size: 45px;
+                margin-bottom: 40px;
+            }
+    
+            .specialMenuFilterBox {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                border: 1px solid #E2DFDD;
+                border-radius: 5px;
+                flex-wrap: wrap;
+                margin-bottom: 55px;
+    
+                .filterItem {
+                    cursor: pointer;
+                    color: #6c6c6c;
+                    padding: 10px 28px;
+                    font-size: 15px;
+                    background-color: transparent;
+                    border: 0px;
+                    transition: 0.3s;
+    
+                    &:hover {
+                        font-weight: 500;
+                        background-color: #c7a17a;
+                        border-radius: 5px;
+                        color: white;
+    
+                    }
+                }
+            }
+    
+            .popularProductsContainer {
+                display: flex;
+                justify-content: center;
+    
+                .popularProducts {
+                    display: grid;
+                    grid-template-columns: 516px;
+                    grid-template-rows: 371px 371px 371px 371px 371px 371px;
+                    grid-template-areas:'grid1'
+                                        'grid2'
+                                        'grid3'
+                                        'grid4'
+                                        'grid5'
+                                        'grid6';
+                    column-gap: 30px;
+                    row-gap: 200px;
+    
+                    .popularProduct {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        width: 100%;
+                        height: max-content;
+    
+                        &:hover {
+    
+                            .popularProductImgBox>img {
+                                transform: scale(1.1);
+                            }
+                        }
+    
+                        .popularProductImgBox {
+                            width: 100%;
+                            height: 255px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 10px;
+                            overflow: hidden;
+    
+                            img {
+                                min-width: 100%;
+                                min-height: 100%;
+                                transition: 0.3s;
+                            }
+                        }
+    
+                        .popularProductTextBox {
+                            padding: 30px 40px;
+                            margin: 0px 25px;
+                            border-radius: 10px;
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            row-gap: 10px;
+                            background-color: #eee;
+                            width: 406px;
+                            height: 181px;
+                            position: absolute;
+                            top: 80%;
+                            left: calc(50% - 228px);
+    
+                            .popularProductName {
+                                font-size: 27px;
+                                font-family: 'Bebas Neue', sans-serif;
+                            }
+    
+                            .popularProductPrice {
+                                font-size: 15px;
+    
+                                .productPrice {
+                                    color: #c9a47e;
+    
+                                    .oldPrice{
+                                        text-decoration: line-through;
+                                        color: #6c6c6c;
+                                    }
+                                }
+                            }
+    
+                            .popularProductsIconsBox {
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                width: 60%;
+    
+                                .productIconBox {
+                                    cursor: pointer;
+                                    width: 35px;
+                                    height: 35px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 1px solid #E2DFDD;
+                                    border-radius: 6px;
+                                    transition: 0.4s;
+    
+                                    &:hover {
+                                        color: #70502f;
+                                        border: 1px solid rgb(112, 80, 47);
+                                    }
+                                }
+                            }
+                        }
+    
+                        .popularProductModalContainer{
+                            width: 100%;
+                            height: 100vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            z-index: 6;
+                            background-color: rgba( #000 , 0.3);
+    
+                            // ProductDetail Style
+                            .popularProductModal{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                max-width: 800px;
+                                height: max-content;
+                                row-gap: 20px;
+                                position: absolute;
+                                background-color: #242627;
+                                border-radius: 10px;
+                                padding: 40px;
+    
+                                .modalProductImgBox{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100%;
+                                    width: 324px;
+                                    padding: 30px 60px;
+    
+                                    img{
+                                        min-width: 100%;
+                                        max-height: 100%;
+                                    }
+                                }
+    
+                                .modalProductTextBox{
+                                    height: 100%;
+                                    width: calc(1100px - 324px);
+                                    padding: 20px 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    row-gap: 20px;
+    
+                                    .modalProductName{
+                                        font-size: 25px;
+                                    }
+    
+                                    .modalProductPrice{
+                                        font-size: 20px;
+                                    }
+    
+                                    .modalProductInStock{
+                                        font-size: 17px;
+                                    }
+    
+                                    .modalProductDescription{
+                                        line-height: 2em;
+                                        color: #6c6c6c;
+                                    }
+    
+                                    .modalProductQYT{
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 10px;
+    
+                                        span{
+                                            font-weight: 500;
+                                        }
+    
+                                        #modalProductAddingCount{
+                                            width: 100px;
+                                            height: 50px;
+                                            padding: 0 10px;
+                                            border-radius: 4px;
+                                            border: 1px solid #808080;
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+    
+                                .modalExitBtn{
+                                    position: absolute;
+                                    top: 20px;
+                                    right: 20px;
+                                    cursor: pointer;
+                                    width: 40px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #000;
+                                    border-radius: 5px;
+                                }
                             }
                         }
                     }

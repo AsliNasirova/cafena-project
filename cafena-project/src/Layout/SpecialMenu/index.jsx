@@ -44,7 +44,7 @@ function SpecialMenu() {
                                     <img src={product.popularImg} alt="" />
                                 </div>
                                 <div className="popularProductTextBox">
-                                    <h3 className="popularProductName">{product.name}</h3>
+                                    <h3 className="popularProductName">{product.name.toUpperCase()}</h3>
                                     <span className="popularProductPrice">PRICE-$ <span className='productPrice'>{(parseFloat(product.price) * (100 - product.discount)) / 100} / <span className='oldPrice'>{product.price}</span></span></span>
                                     <div className="popularProductsIconsBox">
                                         <div className="productIconBox"><i className="fa-solid fa-basket-shopping"></i></div>
