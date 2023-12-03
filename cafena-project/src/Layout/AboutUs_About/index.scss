@@ -1,13 +1,18 @@
+// :root{
+//     overflow: hidden;
+// }
+
 #breadcrump_area {
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url(https://xpressrow.com/html/cafena/cafena/assets/images/bg/breadcrumb-bg-1.jpeg);
-    height: 40vh;
+    height: 50vh;
     position: relative;
     object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
 
     .container_breadcrump {
@@ -78,6 +83,7 @@
     background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/shape/about-shape-2-1.png);
     display: flex;
     justify-content: center;
+    margin-top: 48px;
 
     .container_aboutUs {
 
@@ -149,12 +155,14 @@
                     margin-bottom: 23px;
                     font-size: 12px;
 
+
                 }
 
                 p {
                     color: #A7A7A7;
                     font-size: 18px;
                     margin: 0px 0px 35px;
+                    margin-top: 41px;
 
                 }
             }
@@ -206,5 +214,567 @@
                 }
             }
         }
+    }
+}
+
+///////////////////////////////////
+#WhyChoose {
+    min-height: 80vh;
+  
+    .ChooseAll {
+      .ChooseText {
+        margin-top: 80px;
+        text-align: center;
+  
+        .chooseUS {
+          display: inline-block;
+          background-color: #C7A17A;
+          color: aliceblue;
+          width: 160px;
+          height: 20px;
+          font-size: 16px;
+          border-radius: 4px;
+          margin-bottom: 30px;
+        }
+  
+        h1 {
+          font-size: 30px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+  
+  .BestTesty {
+    .ImageWhy {
+      margin-bottom: 30px;
+      width: 70px;
+      z-index: 1;
+      position: relative;
+  
+      img {
+        margin-left: 143px;
+      }
+    }
+  
+    .ImageWhy::after {
+      width: 45px;
+      height: 45px;
+      background: #EDDFD1;
+      content: "";
+      position: absolute;
+      left: 170px;
+      top: 25px;
+      border-radius: 50%;
+      z-index: -1;
+      transition: 0.3s;
+    }
+  
+  }
+  
+  .WhyText {
+    h2 {
+      text-align: center;
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 17px;
+      text-align: center;
+      width: 280px;
+      margin-left: 35px;
+      color: rgb(153, 151, 151);
+  
+    }
+  }
+  
+  .chooseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  
+    .AccumsaBox {
+      border: 1px solid  #E2DFDD;
+      width: 350px;
+      height: 400px;
+      border-radius: 10px;
+
+      
+  
+      .BestTesty {
+        margin-top: 50px;
+      }
+    }
+  }
+  
+  .iconFal {
+    height: 40px;
+  
+    display: flex;
+    align-items: center;
+  
+    .fa-arrow-right {
+      border: 1px solid rgb(153, 151, 151);
+      border-radius: 7px;
+      padding: 15px;
+      color: rgb(153, 151, 151);
+  
+      &:hover {
+        color: white;
+        background-color: #C7A17A;
+        transition: 0.6s;
+      }
+    }
+  }
+  
+  .icons {
+    margin-top: 40px;
+    margin-left: 150px;
+  
+  }
+  
+  .BestTesty:hover .ImageWhy::after {
+    left: 130px;
+    transition: 0.4s;
+  }
+
+.coffee_recipe:hover .icon_coffee_recipe::after {
+    left: 130px;
+    transition: 0.7s;
+  }
+
+  .AccumsaBox:hover{
+    .icons:hover{
+        color: #C7A17A;
+    }
+  }
+
+///////////////////////////////
+#best_coffee {
+    background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/bg/best-coffe-1.jpeg);
+    margin-top: 92px;
+    background-repeat: no-repeat;
+
+    .best_coffe_area {
+        position: relative;
+        padding-top: 70px;
+        padding-bottom: 75px;
+
+        .best_coffe_bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 50%;
+
+            img {
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+
+        .text_best_coffe_area {
+            margin-left: 572px;
+            width: 796px;
+            position: relative;
+            z-index: 2;
+            background: #ffffff;
+            box-shadow: 0px 14px 40px 0px rgba(220, 220, 220, 0.3);
+            border-radius: 10px;
+            border: 1px solid #E2DFDD;
+            padding-top: 80px;
+            padding-left: 100px;
+            padding-right: 130px;
+            padding-bottom: 80px;
+
+            h2 {
+                font-size: 40px;
+                line-height: 57px;
+                text-transform: uppercase;
+                color: #000;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 20px;
+                margin-bottom: 35px;
+                color: #6c6c6c;
+            }
+        }
+    }
+}
+
+///////////////////////////////////
+#Professional {
+    min-height: 100vh;
+
+    .OurProfessional {
+        .ChooseText {
+
+            margin-top: 80px;
+            text-align: center;
+
+            .chooseUS {
+                display: inline-block;
+                background-color: #C7A17A;
+                color: aliceblue;
+                width: 130px;
+                height: 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 30px;
+                margin-bottom: 60px;
+            }
+        }
+
+        .chooseUS {
+            h6 {
+                font-size: 20px;
+            }
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+}
+
+.prof-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .team__box {
+
+        border: 1px solid #E2DFDD;
+        border-radius: 10px;
+        padding: 38px 28px;
+        transition: 0.4s;
+        width: 350px;
+
+        .thumb {
+
+            position: relative;
+            min-height: 310px;
+            margin-bottom: 30px;
+
+            img {
+                transition: all 0.3s ease-out 0s;
+                min-height: 310px;
+                object-fit: cover;
+                width: 98%;
+                border-radius: 60px 60px 60px 0px;
+            }
+
+            .social-links {
+                position: absolute;
+                top: 30px;
+                right: -1px;
+
+                .social-links__trigger {
+                    border: none;
+                    transition: all 0.3s;
+                    color: #958f8a;
+                    font-size: 13px;
+                    width: 45px;
+                    border-radius: 5px;
+                    height: 45px;
+                    background: #ffffff;
+                    margin-bottom: 10px;
+                    display: flex;
+                    box-shadow: 0px 6px 21px 0px rgba(118, 118, 118, 0.09);
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+                    .list-unstyled {
+                        position: absolute;
+                        transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: translateY(70%);
+
+                        .face {
+                            transition-delay: 100ms;
+                            transition: all 0.5s;
+                        }
+
+                        .ywit {
+                            transition: all 0.5s;
+                            transition-delay: 200ms;
+                        }
+
+                        .pint {
+                            transition: all 0.5s;
+                            transition-delay: 400ms;
+                        }
+
+                        .in {
+                            transition: all 0.5s;
+                            transition-delay: 600ms;
+                        }
+
+                        li {
+                            transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+                            transition: all 0.6s;
+                            color: #a7a7a7;
+                            margin-bottom: 0;
+                        }
+
+                        li:hover a {
+                            background-color: #C7A17A;
+                            color: white;
+                            transition: all 0.6s;
+                        }
+
+                        a {
+                            margin-bottom: 10px;
+                            border: none;
+                            color: #958f8a;
+                            font-size: 13px;
+                            width: 45px;
+                            border-radius: 5px;
+                            height: 45px;
+                            background: #ffffff;
+                            display: flex;
+                            box-shadow: 0px 6px 21px 0px rgba(118, 118, 118, 0.09);
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+
+            .social-links__trigger:hover {
+                background-color: #C7A17A;
+                color: white;
+                transition: all 0.3s;
+
+            }
+
+            .social-links__trigger:hover .list-unstyled {
+                opacity: 1;
+                visibility: visible;
+                transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            }
+        }
+
+        .content {
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-bottom: 2px;
+                font-family: "Jost", sans-serif;
+            }
+
+            p {
+                color: #C7A17A;
+                letter-spacing: 2px;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .team__box:hover img {
+
+        border-radius: 0px 60px 60px 60px;
+        transition: all 0.3s ease-out 0s;
+    }
+}
+
+///////////////////////////////////
+#footer {
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    height: 50vh;
+    background-color: #010103;
+
+    .footerbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30vh;
+        .footerbottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+            .bottomicons {
+                display: flex;
+                justify-content: space-between;
+                width: 20%;
+
+                .icondiv {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #808080;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                }
+
+                .icondiv:hover {
+                    cursor: pointer;
+                    border: 1px solid white;
+
+                    i {
+                        font-size: 20px;
+                        color: white;
+
+                    }
+                }
+
+                i {
+                    color: #808080;
+                }
+            }
+
+            .bottomleft {
+                width: 60%;
+
+                p {
+                    color: white;
+                }
+            }
+        }
+
+        .footertop {
+
+            .toparrow {
+                position: absolute;
+                background-color: white;
+                top: -25px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 30px;
+                border-radius: 100%;
+                cursor: pointer;
+
+                a {
+                    border-radius: 100%;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .topitems {
+                display: flex;
+                justify-content: space-between;
+
+                .input {
+                    position: relative;
+                    width: 10vw;
+                    height: 25px;
+                    border-bottom: 1px solid #32323D;
+                    input {
+                        color: white;
+                        width: 80%;
+                        height: 100%;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                    }
+                    button {
+                        background-color: #010103;
+                        z-index: 1;
+                        color: white;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        outline: none;
+                        background-color: transparent;
+                        border: none;
+                    }
+                }
+
+                .nums {
+                    display: flex;
+
+                    .numbox {
+                        display: flex;
+
+                        i {
+                            color: #d3ad7f;
+                            font-size: 40px;
+                        }
+
+                        p {
+                            padding-top: 12px;
+                            height: 50%;
+                            color: white;
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        a {
+                            color: #a7a7a7;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/////////////////////////////////
+.form-main-container {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 80px 100px 80px;
+    border: 1px solid #0000003a;
+    border-radius: 12px;
+    margin-bottom: 100px;
+
+    .name-input {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        input {
+            width: 500px;
+            height: 55px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #00000020;
+        }
+    }
+
+    button {
+        width: 185px;
+        height: 50px;
+        margin-top: 30px;
+        border: none;
+        border-radius: 8px;
+        background-color: #c7a17a;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
+    button:hover {
+        background-color: #000;
+        transition: .3s;
     }
 }
