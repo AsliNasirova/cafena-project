@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useMemo, useRef, useState } from 'react'
 import { useProducts } from '../../Context/Product'
 import ProductDetail from './ProductDetail'
 import './index.scss'
@@ -6,10 +6,14 @@ import './index.scss'
 function SpecialMenu() {
 
     const FiltersBox = useRef()
+    const [filters, setFilters] = useState('all')
     const { products } = useProducts()
     const [id, setId] = useState()
 
+    const FilteredProducts = useMemo(()=> filters && filters==='all' ? products : products.filter((item)=> item.category.includes(filters)), [filters, products])
+
     function addSelected(e) {
+
         const parent = FiltersBox.current.children
         for (const x of parent) {
             if (x === e) {
@@ -18,8 +22,12 @@ function SpecialMenu() {
             else {
                 x.classList.remove('selected')
             }
-
         }
+
+        if (filters.includes(e.textContent.toLowerCase())) {
+            return
+        }
+        setFilters(e.textContent.toLowerCase())
     }
 
     return (
@@ -34,12 +42,12 @@ function SpecialMenu() {
                     <button onClick={(e) => addSelected(e.target)} className='filterItem'>SANDWICHES</button>
                     <button onClick={(e) => addSelected(e.target)} className='filterItem'>SWEETS</button>
                     <button onClick={(e) => addSelected(e.target)} className='filterItem'>BLACK TEA</button>
-                    <button onClick={(e) => addSelected(e.target)} className='filterItem'>GREAN TEA</button>
+                    <button onClick={(e) => addSelected(e.target)} className='filterItem'>GREEN TEA</button>
                 </div>
                 <div className="popularProductsContainer">
                     <div className="popularProducts">
-                        {products && products.map((product) => (
-                            <div key={product.id} className={`popularProduct 'grid${product.id}'`} style={{ gridArea: `grid${product.id}` }}>
+                        {FilteredProducts && FilteredProducts.map((product,grid) => (
+                            <div key={product.id} className={`popularProduct 'grid${product.id}'`} style={{ gridArea: `grid${grid+1}` }}>   
                                 <div className="popularProductImgBox">
                                     <img src={product.popularImg} alt="" />
                                 </div>
