@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.scss'
+import Button from '../../components/Button'
 
 function Reservation() {
     return (
@@ -16,10 +17,14 @@ function Reservation() {
                         <input type="date" placeholder='dd/mm/yyyy' />
                     </div>
                     <div className='name-input'>
-                        <input type="text" placeholder='Time ' />
+                        <input  type="time" placeholder='Time ' />
                         <input type="text" placeholder='Enter your email' />
                     </div>
-                   <div className='reservation_btn'><button>SUBMIT YOUR REQUEST</button></div> 
+                    <div className="reserv">
+                    <Button>
+                        <a href="">SUBMIT YOU REQUEST</a>
+                    </Button>
+                    </div>
                 </form>
             </div>
         </section>
