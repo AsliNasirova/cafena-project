@@ -117,6 +117,7 @@ function Navbar() {
                                 <li><StyledNavLink to='/shop/details'>SHOP DETAILS</StyledNavLink></li>
                                 <li><StyledNavLink to='/shop/cart'>SHOP CART</StyledNavLink></li>
                                 <li><StyledNavLink to='/shop/checkout'>SHOP CHECKOUT</StyledNavLink></li>
+                                <li><StyledNavLink to='/shop/wishlist'>SHOP WISHLIST</StyledNavLink></li>
                             </ul>
                         </li>
                         <li><StyledNavLink to="/contact">CONTACT</StyledNavLink></li>

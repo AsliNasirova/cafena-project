@@ -71,8 +71,8 @@ function Shop() {
                             <select onChange={(e)=>handleSort(e.target)}>
                                 <option value="name1">Sort By A-Z</option>
                                 <option value="name2">Sort By Z-A</option>
-                                <option value="price1">Sort By Price</option>
-                                <option value="price2">Sort By Price</option>
+                                <option value="price1">Sort By Price To Higher</option>
+                                <option value="price2">Sort By Price To Lower</option>
                             </select>
                         </div>
                     </div>

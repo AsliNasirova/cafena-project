@@ -21,7 +21,7 @@ export const WishlistProvider =({children})=>{
     const data = {
         wishlist,
         setWishlist,
-        addToWishlist
+        addToWishlist,
     }
 
     return(
