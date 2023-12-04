@@ -37,40 +37,41 @@ function SideMenu() {
   return (
     <div>
       <ul className='sideNav'>
-        <li><StyledNavLink><h5>HOME</h5></StyledNavLink><i onClick={handleDropdownHome} className="dropdownPlus fa-solid fa-plus"></i></li>
+        <li><StyledNavLink to='/'><h5>HOME</h5></StyledNavLink><i onClick={handleDropdownHome} className="dropdownPlus fa-solid fa-plus"></i></li>
         <li>
           <ul className='sideSubNav subHome' ref={subHome}>
-            <li><StyledNavLink>HOME 1</StyledNavLink></li>
-            <li><StyledNavLink>HOME 2</StyledNavLink></li>
-            <li><StyledNavLink>HOME 3</StyledNavLink></li>
+            <li><StyledNavLink to='/'>HOME 1</StyledNavLink></li>
+            <li><StyledNavLink to='/'>HOME 2</StyledNavLink></li>
+            <li><StyledNavLink to='/'>HOME 3</StyledNavLink></li>
           </ul>
         </li>
-        <li className='defaultList'><StyledNavLink><h5>ABOUT</h5></StyledNavLink></li>
-        <li className='defaultList'><StyledNavLink><h5>MENU</h5></StyledNavLink></li>
-        <li className='defaultList'><StyledNavLink><h5>RESERVATION</h5></StyledNavLink></li>
-        <li><StyledNavLink><h5>PAGES</h5></StyledNavLink><i onClick={handleDropdownPages} className="dropdownPlus fa-solid fa-plus"></i></li>
+        <li className='defaultList'><StyledNavLink to='/about'><h5>ABOUT</h5></StyledNavLink></li>
+        <li className='defaultList'><StyledNavLink to='/menu'><h5>MENU</h5></StyledNavLink></li>
+        <li className='defaultList'><StyledNavLink to='/reservation'><h5>RESERVATION</h5></StyledNavLink></li>
+        <li><StyledNavLink to='/pages'><h5>PAGES</h5></StyledNavLink><i onClick={handleDropdownPages} className="dropdownPlus fa-solid fa-plus"></i></li>
         <li>
 
           <ul className='sideSubNav subPages' ref={subPages}>
-            <li><StyledNavLink>BLOG</StyledNavLink></li>
-            <li><StyledNavLink>BLOG DETAILS</StyledNavLink></li>
-            <li><StyledNavLink>CHEFS</StyledNavLink></li>
-            <li><StyledNavLink>FAQ</StyledNavLink></li>
-            <li><StyledNavLink>STORY</StyledNavLink></li>
-            <li><StyledNavLink>GALLERY</StyledNavLink></li>
+            <li><StyledNavLink to='/blog'>BLOG</StyledNavLink></li>
+            <li><StyledNavLink to='/blog/details'>BLOG DETAILS</StyledNavLink></li>
+            <li><StyledNavLink to='/chefs'>CHEFS</StyledNavLink></li>
+            <li><StyledNavLink to='/faq'>FAQ</StyledNavLink></li>
+            <li><StyledNavLink to='/story'>STORY</StyledNavLink></li>
+            <li><StyledNavLink to='/gallery'>GALLERY</StyledNavLink></li>
           </ul>
 
         </li>
-        <li><StyledNavLink><h5>SHOP</h5></StyledNavLink><i onClick={handleDropdownShop} className="dropdownPlus fa-solid fa-plus"></i></li>
+        <li><StyledNavLink to='/shop'><h5>SHOP</h5></StyledNavLink><i onClick={handleDropdownShop} className="dropdownPlus fa-solid fa-plus"></i></li>
         <li>
           <ul className='sideSubNav subShop' ref={subShop}>
-            <li><StyledNavLink>SHOP</StyledNavLink></li>
-            <li><StyledNavLink>SHOP DETAILS</StyledNavLink></li>
-            <li><StyledNavLink>SHOP CART</StyledNavLink></li>
-            <li><StyledNavLink>SHOP CHECKOUT</StyledNavLink></li>
+            <li><StyledNavLink to='/shop'>SHOP</StyledNavLink></li>
+            <li><StyledNavLink to='/shop/details'>SHOP DETAILS</StyledNavLink></li>
+            <li><StyledNavLink to='/shop/cart'>SHOP CART</StyledNavLink></li>
+            <li><StyledNavLink to='/shop/checkout'>SHOP CHECKOUT</StyledNavLink></li>
+            <li><StyledNavLink to='/shop/wishlist'>SHOP WISHLIST</StyledNavLink></li>
           </ul>
         </li>
-        <li><StyledNavLink><h5>CONTACT</h5></StyledNavLink></li>
+        <li><StyledNavLink to='/contact'><h5>CONTACT</h5></StyledNavLink></li>
       </ul>
     </div>
   )
