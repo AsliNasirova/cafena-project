@@ -10,6 +10,7 @@ import { BasketProvider } from './Context/Basket';
 import { WishlistProvider } from './Context/Wishlist';
 import FAQ from './Pages/FAQ';
 import Reservation from './Pages/Reservation';
+import ShopWishlist from './Pages/ShopWishlist';
 
 
 
@@ -29,6 +30,7 @@ function App() {
               <Route path='/shop' element={<Shop/>}></Route>
               <Route path='/faq' element={<FAQ/>}></Route>
               <Route path='/reservation' element={<Reservation/>}></Route>
+              <Route path='/shop/wishlist' element={<ShopWishlist/>}></Route>
             </Route>
           </Routes>
           </BrowserRouter>
