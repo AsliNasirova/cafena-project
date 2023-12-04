@@ -170,7 +170,6 @@
             .about_list {
                 display: flex;
                 flex-direction: column;
-                width: 540px;
 
                 ul {
                     gap: 14px;
@@ -223,6 +222,7 @@
         display: flex;
         justify-content: center;
         margin-top: 48px;
+        width: 100%;
     
         .container_aboutUs {
             #about_cafena_area {
@@ -255,6 +255,7 @@
                             // }
             
                             .smallImage {
+                              
                                 position: absolute;
                                 left: -22px;
                                 bottom: 0px;
@@ -316,7 +317,6 @@
                         .about_list {
                             display: flex;
                             flex-direction: column;
-                            width: 540px;
             
                             ul {
                                 gap: 14px;
@@ -445,7 +445,6 @@
                 .about_list {
                     display: flex;
                     flex-direction: column;
-                    width: 540px;
     
                     ul {
                         gap: 14px;
@@ -490,6 +489,12 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .smallImage{
+        height: 162px;
     }
 }
 
@@ -577,7 +582,11 @@
       height: 400px;
       border-radius: 10px;
 
-      
+      &:hover .fa-arrow-right{
+        color: white;
+        background-color: #C7A17A;
+        transition: 0.6s;
+      }
   
       .BestTesty {
         margin-top: 50px;
@@ -622,6 +631,7 @@
   }
 
   .AccumsaBox:hover{
+
     .icons:hover{
         color: #C7A17A;
     }
@@ -728,14 +738,16 @@
                 padding-bottom: 80px;
     
                 h2 {
-                    font-size: 40px;
-                    line-height: 57px;
+                    width: 125%;
+                    font-size: 34px;
+                    line-height: 38px;
                     text-transform: uppercase;
                     color: #000;
                     margin-bottom: 25px;
                 }
     
                 p {
+                    width: 122%;
                     font-size: 20px;
                     margin-bottom: 35px;
                     color: #6c6c6c;

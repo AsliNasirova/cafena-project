@@ -151,8 +151,16 @@
                 text-decoration: none;
                 transition: 0.6s;
 
+                &:hover{
+                    border: 1px solid white;
+                }
+
                 i {
-                    color: white;
+                    &:hover{
+                        color: white;
+                     
+                        transition: 0.3s;
+                    }
                 }
             }
         }
@@ -268,6 +276,7 @@
         }
     
         .container_cafena {
+           
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -284,6 +293,8 @@
                     text-align: start;
     
                     p {
+                        margin-top: 5px;
+                        margin-bottom: 18px;
                         color: white;
     
                     }
