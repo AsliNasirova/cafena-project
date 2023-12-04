@@ -217,6 +217,282 @@
     }
 }
 
+@media screen and (max-width:1200px) {
+    #about_cafena_area {
+        background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/shape/about-shape-2-1.png);
+        display: flex;
+        justify-content: center;
+        margin-top: 48px;
+    
+        .container_aboutUs {
+            #about_cafena_area {
+                background-image: url(https://xpressrow.com/html/cafena/cafena/assets/images/shape/about-shape-2-1.png);
+                display: flex;
+                justify-content: center;
+                margin-top: 48px;
+            
+                .container_aboutUs {
+            
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    margin-top: 30px;
+            
+                    // left part
+                    .left_image_part {
+                        display: flex;
+                        justify-content: center;
+            
+                        .image_aboutUs {
+                            position: relative;
+                            max-width: 528px;
+            
+                            // .bigImage {
+            
+                            //     position: absolute;
+                            //     top: 0px;
+                            //     left: 0px;
+                            // }
+            
+                            .smallImage {
+                                position: absolute;
+                                left: -22px;
+                                bottom: 0px;
+                                // top: 0px;
+                                // left: 0px;
+            
+                            }
+                        }
+                    }
+            
+                    // right part
+                    .right_text_part {
+                        font-family: Jost, sans-serif;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+            
+                        .text_aboutUs {
+                            justify-content: center;
+                            text-align: start;
+                            align-items: center;
+                            max-width: 550px;
+                            height: 290px;
+            
+                            .aboutus {
+                                width: 85px;
+                                align-items: center;
+                            }
+            
+                            h2 {
+                                font-size: 30px;
+            
+                            }
+            
+                            h6 {
+            
+                                color: #FFFFFF;
+                                background-color: #C7A17A;
+                                text-transform: uppercase;
+                                letter-spacing: 2px;
+                                border-radius: 3px;
+                                line-height: 22px;
+                                margin-bottom: 23px;
+                                font-size: 12px;
+            
+            
+                            }
+            
+                            p {
+                                color: #A7A7A7;
+                                font-size: 18px;
+                                margin: 0px 0px 35px;
+                                margin-top: 41px;
+            
+                            }
+                        }
+            
+                        .about_list {
+                            display: flex;
+                            flex-direction: column;
+                            width: 540px;
+            
+                            ul {
+                                gap: 14px;
+            
+                            }
+            
+                            li {
+                                width: 100%;
+                                color: black;
+                                transition: 0.6s;
+            
+                                span {
+                                    display: flex;
+                                    margin-bottom: 0;
+                                    gap: 14px;
+                                }
+            
+                                .icon {
+                                    height: 40px;
+                                    display: flex;
+                                    align-items: center;
+            
+            
+                                }
+            
+                                .fa-check {
+                                    padding: 10px;
+                                    border-radius: 7px;
+                                    border: 1px solid #E2DFDD;
+            
+                                    &:hover {
+                                        color: white;
+                                        background-color: black;
+                                        transition: 0.6s;
+                                    }
+                                }
+            
+                                h4 {
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+    
+            // left part
+            .left_image_part {
+                display: flex;
+                justify-content: center;
+    
+                .image_aboutUs {
+                    position: relative;
+                    max-width: 528px;
+    
+                    // .bigImage {
+    
+                    //     position: absolute;
+                    //     top: 0px;
+                    //     left: 0px;
+                    // }
+    
+                    .smallImage {
+                        position: absolute;
+                        left: -22px;
+                        bottom: 0px;
+                        // top: 0px;
+                        // left: 0px;
+    
+                    }
+                }
+            }
+    
+            // right part
+            .right_text_part {
+                font-family: Jost, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+    
+                .text_aboutUs {
+                    justify-content: center;
+                    text-align: start;
+                    align-items: center;
+                    max-width: 550px;
+                    height: 290px;
+    
+                    .aboutus {
+                        width: 85px;
+                        align-items: center;
+                    }
+    
+                    h2 {
+                        font-size: 30px;
+    
+                    }
+    
+                    h6 {
+    
+                        color: #FFFFFF;
+                        background-color: #C7A17A;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        border-radius: 3px;
+                        line-height: 22px;
+                        margin-bottom: 23px;
+                        font-size: 12px;
+    
+    
+                    }
+    
+                    p {
+                        color: #A7A7A7;
+                        font-size: 18px;
+                        margin: 0px 0px 35px;
+                        margin-top: 41px;
+    
+                    }
+                }
+    
+                .about_list {
+                    display: flex;
+                    flex-direction: column;
+                    width: 540px;
+    
+                    ul {
+                        gap: 14px;
+    
+                    }
+    
+                    li {
+                        width: 100%;
+                        color: black;
+                        transition: 0.6s;
+    
+                        span {
+                            display: flex;
+                            margin-bottom: 0;
+                            gap: 14px;
+                        }
+    
+                        .icon {
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+    
+    
+                        }
+    
+                        .fa-check {
+                            padding: 10px;
+                            border-radius: 7px;
+                            border: 1px solid #E2DFDD;
+    
+                            &:hover {
+                                color: white;
+                                background-color: black;
+                                transition: 0.6s;
+                            }
+                        }
+    
+                        h4 {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 ///////////////////////////////////
 #WhyChoose {
     min-height: 80vh;

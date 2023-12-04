@@ -19,7 +19,7 @@ function Reservation() {
                         <input type="text" placeholder='Time ' />
                         <input type="text" placeholder='Enter your email' />
                     </div>
-                    <button>SUBMIT YOUR REQUEST</button>
+                   <div className='reservation_btn'><button>SUBMIT YOUR REQUEST</button></div> 
                 </form>
             </div>
         </section>
