@@ -14,9 +14,9 @@ function ShopWishlist() {
                         <tr>
                             <th>Image</th>
                             <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
+                            <th className='desTitle'>Description</th>
                             <th>Discount Price</th>
+                            <th>Price</th>
                             <th>Category</th>
                         </tr>
                     </thead>
@@ -26,8 +26,8 @@ function ShopWishlist() {
                                 <td className='tdImg'><img src={item.img} alt="" /></td>
                                 <td className='tdName'>{item.name.toUpperCase()}</td>
                                 <td className='tdDescription'>{item.description}</td>
+                                <td className='tdPrice'>${(+item.price*(100 - item.discount))/100}</td>
                                 <td className='tdPrice'>${item.price}</td>
-                                <td className='tdPrice'>${+item.price}</td>
                                 <td className='tdCategory'>{item.category[0]}</td>
                             </tr>
                         )) }
